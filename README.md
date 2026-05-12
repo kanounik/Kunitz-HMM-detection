@@ -67,10 +67,5 @@ kunitz-hmm-profile/
 └── README.md
 ```
 
-## Quick Start
 
-1. Clone the repository
-```bash
-git clone https://github.com/<your-username>/kunitz-hmm-profile.git
-cd kunitz-hmm-profile
 
