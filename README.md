@@ -15,7 +15,7 @@
 
 
 ## Overview
-This project builds and validates a **Profile Hidden Markov Model (pHMM)** for the detection of the Kunitz-type protease inhibitor domain (PFAM: PF00014) in protein sequences. The trained model is then applied to annotate Kunitz domains across the entire Swiss-Prot database.
+This project builds and validates a **Profile Hidden Markov Model (pHMM)** for the detection of the **Kunitz-type protease inhibitor domain** (PFAM: PF00014) in protein sequences. The trained model is then applied to annotate Kunitz domains across the entire Swiss-Prot database.
 
 ### Key goals:
 - Build a custom pHMM for the Kunitz domain from structural data
@@ -23,7 +23,7 @@ This project builds and validates a **Profile Hidden Markov Model (pHMM)** for t
 - Annotate Kunitz domains across Swiss-Prot and analyze their distribution
 
 ## Background
-The Kunitz domain is a short (~58 residues), disulfide-rich alpha+beta fold found in serine protease inhibitors. The canonical example is BPTI (Bovine Pancreatic Trypsin Inhibitor, PDB: 3TGI, chain I), which tightly binds trypsin via its Lys15 residue. The fold is stabilized by three conserved disulfide bonds (Cys5–Cys55, Cys14–Cys38, Cys30–Cys51).
+The Kunitz domain is a short (~58 residues), disulfide-rich alpha+beta fold found in serine protease inhibitors. The canonical example is **BPTI** (Bovine Pancreatic Trypsin Inhibitor, PDB: 3TGI, chain I), which tightly binds trypsin via its Lys15 residue. The fold is stabilized by three conserved disulfide bonds (Cys5–Cys55, Cys14–Cys38, Cys30–Cys51).
 
 ### Kunitz domains appear in proteins such as:
 * Aprotinin (BPTI) — antifibrinolytic drug (Trasylol)
@@ -35,35 +35,34 @@ The Kunitz domain is a short (~58 residues), disulfide-rich alpha+beta fold foun
 ```text
 kunitz-hmm-profile/
 │
-├── data/
-│   ├── structures/              # 26 downloaded PDB files
-│   ├── sequences/               # FASTA files (positive/negative sets)
-│   ├── alignments/
-│   │   └── kunitz_aligned.fasta # MAFFT multiple sequence alignment
-│   └── swissprot/               # Swiss-Prot subsets used for testing
+├── pdb_files/                   # Downloaded PDB structures (26 files)
+├── kunitz_chains/               # Extracted Kunitz domain chains
 │
-├── models/
-│   └── kunitz.hmm               # Trained HMM profile (102 nodes)
+├── 3TGI.pdb                     # Canonical BPTI reference structure
 │
-├── results/
-│   ├── hmmsearch_train.out      # Consistency test: 26/26 recovered
-│   ├── hmmsearch_test.out       # Validation results (368 pos + 368 neg)
-│   ├── hmmsearch_swissprot.out  # Full Swiss-Prot scan (379 hits)
-│   ├── confusion_matrix.tsv     # TP=363, FP=0, TN=368, FN=5
-│   ├── performance.tsv          # Metrics per E-value threshold
-│   └── figures/                 # ROC curve, score distributions
+├── kunitz_with_pdb.fasta        # Sequences with PDB structures
+├── kunitz_all.fasta             # All collected Kunitz sequences
+├── kunitz_sequences.fasta       # Filtered Kunitz sequences for alignment
+├── kunitz_aligned.fasta         # MAFFT multiple sequence alignment
 │
-├── scripts/
-│   ├── download_pdb.py          # Download 26 PDB structures
-│   ├── extract_chains.py        # Extract Kunitz chains from PDB files
-│   ├── 03_build_hmm.sh          # Run hmmbuild
-│   ├── 04_search_hmm.sh         # Run hmmsearch on datasets
-│   ├── 05_evaluate.py           # Confusion matrix & metrics
-│   └── 06_annotate_swissprot.py # Apply model to full Swiss-Prot
+├── positives.fasta              # Full Swiss-Prot positive set (368 sequences)
+├── negatives.fasta              # Full Swiss-Prot negative set (564,993 sequences)
+├── test_positives.fasta         # Balanced test positive set (368 sequences)
+├── test_negatives.fasta         # Balanced test negative set (368 sequences)
 │
-├── report/
-│   └── kunitz_hmm_report.pdf    # Final project report
+├── kunitz.hmm                   # Trained HMM profile (102 nodes)
+│
+├── hits_pos.tbl                 # hmmsearch results on positive test set
+├── hits_neg.tbl                 # hmmsearch results on negative test set
+├── swissprot_all.fasta          # Full Swiss-Prot sequences
+├── swissprot_all.tbl            # hmmsearch results on full Swiss-Prot (379 hits)
+│
+├── download_pdb.py              # Download 26 PDB structures
+├── extract_chains.py            # Extract Kunitz chains from PDB files
+├── validate_hmm.py              # Run hmmsearch & compute confusion matrix
+├── evalue_analysis.py           # E-value threshold analysis & metrics
 │
 ├── environment.yml
 ├── requirements.txt
 └── README.md
+```
