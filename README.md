@@ -5,7 +5,6 @@
 - [Overview](#overview)
 - [Background](#background)
 - [Repository Structure](#repository-structure)
-- [Quick Start](#quick-start)
 - [Methods](#methods)
 - [Results](#results)
 - [Dependencies](#dependencies)
