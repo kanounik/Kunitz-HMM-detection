@@ -1,4 +1,4 @@
-## Kunitz-HMM-detection
+## Kunitz Domain Profile HMM
 
 **Overview of the Pipeline**
 ```text
