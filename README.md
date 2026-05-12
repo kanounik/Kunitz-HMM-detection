@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
+- [Overview](##overview)
 - [Background](#background)
 - [Repository Structure](#repository-structure)
 - [Quick Start](#quick-start)
