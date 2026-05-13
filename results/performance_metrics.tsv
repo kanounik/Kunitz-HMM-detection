@@ -1,0 +1,2 @@
+Threshold	Sensitivity	Specificity	Precision	F1	MCC
+0.001	0.9864	1.0000	1.0000	0.9932	0.9865
