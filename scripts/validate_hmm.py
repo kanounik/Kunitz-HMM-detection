@@ -83,11 +83,7 @@ def run_hmmsearch(hmm, fasta, tsv_path):
         writer.writeheader()
         writer.writerows(rows)
     print(f"  Saved: {tsv_path}")
-
-    # Delete temp file immediately
-    os.remove(tmp_path)
-
-    return hits
+    
 
 def save_confusion_matrix_tsv(tp, fp, tn, fn, path):
     with open(path, "w", newline="") as f:
