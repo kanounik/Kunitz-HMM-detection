@@ -1,9 +1,12 @@
 import random
 import subprocess
- 
+import csv
+import os
+import tempfile
+
 RANDOM_SEED = 42
 EVALUE_THRESHOLD = 1e-3
- 
+
 def parse_fasta(path):
     records = {}
     header = None
@@ -22,28 +25,86 @@ def parse_fasta(path):
     if header:
         records[header] = "".join(seq)
     return records
- 
+
 def write_fasta(records, path):
     with open(path, "w") as f:
         for acc, seq in records.items():
             f.write(f">{acc}\n{seq}\n")
- 
-def run_hmmsearch(hmm, fasta, tbl):
-    subprocess.run(["hmmsearch", "--tblout", tbl, "-E", "10", hmm, fasta],
-                   capture_output=True)
+
+def save_ids_tsv(records, label, path):
+    """Save sequence IDs and lengths to TSV — lightweight alternative to FASTA."""
+    with open(path, "w", newline="") as f:
+        writer = csv.writer(f, delimiter="\t")
+        writer.writerow(["accession", "length", "label"])
+        for acc, seq in records.items():
+            writer.writerow([acc, len(seq), label])
+    print(f"  Saved: {path}  ({len(records)} sequences)")
+
+def run_hmmsearch(hmm, fasta, tsv_path):
+    """Run hmmsearch and save results directly as TSV. No .tbl file kept."""
+    # Use a temp file that is automatically deleted
+    with tempfile.NamedTemporaryFile(mode="w", suffix=".tmp", delete=False) as tmp:
+        tmp_path = tmp.name
+
+    subprocess.run(
+        ["hmmsearch", "--tblout", tmp_path, "-E", "10", hmm, fasta],
+        capture_output=True
+    )
+
     hits = {}
-    with open(tbl) as f:
+    rows = []
+    with open(tmp_path) as f:
         for line in f:
             if line.startswith("#"):
                 continue
             cols = line.split()
-            if len(cols) < 5:
+            if len(cols) < 6:
                 continue
-            acc, evalue = cols[0], float(cols[4])
+            acc         = cols[0]
+            evalue      = float(cols[4])
+            score       = cols[5]
+            description = " ".join(cols[18:]) if len(cols) > 18 else ""
             if acc not in hits or evalue < hits[acc]:
                 hits[acc] = evalue
+            rows.append({
+                "target_name": acc,
+                "e_value":     evalue,
+                "score":       score,
+                "description": description
+            })
+
+    # Save as TSV
+    with open(tsv_path, "w", newline="") as f:
+        writer = csv.DictWriter(
+            f,
+            fieldnames=["target_name", "e_value", "score", "description"],
+            delimiter="\t"
+        )
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"  Saved: {tsv_path}")
+
+    # Delete temp file immediately
+    os.remove(tmp_path)
+
     return hits
- 
+
+def save_confusion_matrix_tsv(tp, fp, tn, fn, path):
+    with open(path, "w", newline="") as f:
+        writer = csv.writer(f, delimiter="\t")
+        writer.writerow(["", "Predicted_Positive", "Predicted_Negative"])
+        writer.writerow(["Actual_Positive", tp, fn])
+        writer.writerow(["Actual_Negative", fp, tn])
+    print(f"  Saved: {path}")
+
+def save_metrics_tsv(sens, spec, prec, f1, mcc, threshold, path):
+    with open(path, "w", newline="") as f:
+        writer = csv.writer(f, delimiter="\t")
+        writer.writerow(["Threshold", "Sensitivity", "Specificity", "Precision", "F1", "MCC"])
+        writer.writerow([threshold, f"{sens:.4f}", f"{spec:.4f}",
+                         f"{prec:.4f}", f"{f1:.4f}", f"{mcc:.4f}"])
+    print(f"  Saved: {path}")
+
 def metrics(tp, fp, tn, fn):
     sens = tp / (tp + fn) if (tp + fn) else 0
     spec = tn / (tn + fp) if (tn + fp) else 0
@@ -52,46 +113,55 @@ def metrics(tp, fp, tn, fn):
     denom = ((tp+fp)*(tp+fn)*(tn+fp)*(tn+fn)) ** 0.5
     mcc  = (tp*tn - fp*fn) / denom if denom else 0
     return sens, spec, prec, f1, mcc
- 
+
 def main():
     random.seed(RANDOM_SEED)
- 
+
     print("Loading positives...")
     positives = parse_fasta("positives.fasta")
     print(f"  {len(positives)} sequences")
- 
+
     print("Loading negatives (large file, please wait)...")
     negatives = parse_fasta("negatives.fasta")
     print(f"  {len(negatives)} sequences")
- 
+
     n = len(positives)
     sampled_neg = dict(random.sample(list(negatives.items()), n))
     print(f"\nSampled {n} negatives to match positives")
- 
+
     write_fasta(positives,   "test_positives.fasta")
     write_fasta(sampled_neg, "test_negatives.fasta")
     print("Written: test_positives.fasta, test_negatives.fasta")
- 
+
+    # Save lightweight TSV versions
+    print("\nSaving sequence ID lists as TSV...")
+    save_ids_tsv(positives,   "positive", "positives_ids.tsv")
+    save_ids_tsv(sampled_neg, "negative", "negatives_ids.tsv")
+
     print("\nRunning hmmsearch on positives...")
-    pos_hits = run_hmmsearch("kunitz.hmm", "test_positives.fasta", "hits_pos.tbl")
+    pos_hits = run_hmmsearch("kunitz.hmm", "test_positives.fasta", "hits_pos.tsv")
+
     print("Running hmmsearch on negatives...")
-    neg_hits = run_hmmsearch("kunitz.hmm", "test_negatives.fasta", "hits_neg.tbl")
- 
+    neg_hits = run_hmmsearch("kunitz.hmm", "test_negatives.fasta", "hits_neg.tsv")
+
     TP = sum(1 for ev in pos_hits.values() if ev <= EVALUE_THRESHOLD)
     FN = n - TP
     FP = sum(1 for ev in neg_hits.values() if ev <= EVALUE_THRESHOLD)
     TN = n - FP
- 
+
     print(f"\nE-value threshold: {EVALUE_THRESHOLD}")
     print(f"  TP={TP}  FN={FN}  TN={TN}  FP={FP}")
- 
+
     sens, spec, prec, f1, mcc = metrics(TP, FP, TN, FN)
     print(f"\n  Sensitivity : {sens:.4f}")
     print(f"  Specificity : {spec:.4f}")
     print(f"  Precision   : {prec:.4f}")
     print(f"  F1 Score    : {f1:.4f}")
     print(f"  MCC         : {mcc:.4f}")
- 
+
+    save_confusion_matrix_tsv(TP, FP, TN, FN, "confusion_matrix.tsv")
+    save_metrics_tsv(sens, spec, prec, f1, mcc, EVALUE_THRESHOLD, "performance_metrics.tsv")
+
     print("\nFalse Negatives (Kunitz missed):")
     count = 0
     for acc in positives:
@@ -101,7 +171,7 @@ def main():
             if count >= 5:
                 print("  ...")
                 break
- 
+
     print("\nFalse Positives (non-Kunitz detected):")
     count = 0
     for acc, ev in neg_hits.items():
@@ -111,6 +181,6 @@ def main():
             if count >= 5:
                 print("  ...")
                 break
- 
+
 if __name__ == "__main__":
     main()
