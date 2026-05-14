@@ -35,36 +35,46 @@ The **Kunitz domain** is a short (~58 residues), disulfide-rich alpha+beta fold 
 ```text
 kunitz-hmm-profile/
 │
-├── pdb_files/                   # Downloaded PDB structures (26 files)
-├── kunitz_chains/               # Extracted Kunitz domain chains
+├── pdb_files/                         # 26 downloaded PDB structures
+├── kunitz_chains/                     # Extracted Kunitz domain chains
 │
-├── 3TGI.pdb                     # Canonical BPTI reference structure
+├── [kunitz_with_pdb.fasta](kunitz_with_pdb.fasta)   # Kunitz sequences with PDB structures
+├── [kunitz_all.fasta](kunitz_all.fasta)             # All collected Kunitz sequences
+├── [kunitz_sequences.fasta](kunitz_sequences.fasta) # Filtered sequences used for alignment
+├── [kunitz_aligned.fasta](kunitz_aligned.fasta)     # MAFFT multiple sequence alignment
+├── [kunitz.hmm](kunitz.hmm)                         # Trained HMM profile (102 nodes)
+├── [3TGI.pdb](3TGI.pdb)                             # Canonical BPTI reference structure
 │
-├── kunitz_with_pdb.fasta        # Sequences with PDB structures
-├── kunitz_all.fasta             # All collected Kunitz sequences
-├── kunitz_sequences.fasta       # Filtered Kunitz sequences for alignment
-├── kunitz_aligned.fasta         # MAFFT multiple sequence alignment
+├── [positives.fasta](positives.fasta)               # Swiss-Prot positive set (368, PF00014)
+├── negatives.fasta                                  # Swiss-Prot negative set (not included)
+├── [test_positives.fasta](test_positives.fasta)     # Balanced test positive set
+├── [test_negatives.fasta](test_negatives.fasta)     # Balanced test negative set
 │
-├── positives.fasta              # Full Swiss-Prot positive set (368 sequences)
-├── negatives.fasta              # Full Swiss-Prot negative set (564,993 sequences)
-├── test_positives.fasta         # Balanced test positive set (368 sequences)
-├── test_negatives.fasta         # Balanced test negative set (368 sequences)
+├── results/
+│   ├── [hits_pos.tsv](results/hits_pos.tsv)
+│   ├── [hits_neg.tsv](results/hits_neg.tsv)
+│   ├── [confusion_matrix.tsv](results/confusion_matrix.tsv)
+│   ├── [performance_metrics.tsv](results/performance_metrics.tsv)
+│   ├── [evalue_analysis.tsv](results/evalue_analysis.tsv)
+│   ├── [swissprot_hits.tsv](results/swissprot_hits.tsv)
+│   └── figures/
+│       ├── confusion_matrices.png
+│       ├── roc_curve.png
+│       ├── mcc_thresholds.png
+│       └── hmm_logo.png
 │
-├── kunitz.hmm                   # Trained HMM profile (102 nodes)
+├── scripts/
+│   ├── [download_pdb.py](scripts/download_pdb.py)
+│   ├── [extract_chains.py](scripts/extract_chains.py)
+│   ├── [validate_hmm.py](scripts/validate_hmm.py)
+│   ├── [evalue_analysis.py](scripts/evalue_analysis.py)
+│   ├── [cross_validation.py](scripts/cross_validation.py)
+│   ├── [roc_curve.py](scripts/roc_curve.py)
+│   └── [scan_swissprot.py](scripts/scan_swissprot.py)
 │
-├── hits_pos.tbl                 # hmmsearch results on positive test set
-├── hits_neg.tbl                 # hmmsearch results on negative test set
-├── swissprot_all.fasta          # Full Swiss-Prot sequences
-├── swissprot_all.tbl            # hmmsearch results on full Swiss-Prot (379 hits)
-│
-├── download_pdb.py              # Download 26 PDB structures
-├── extract_chains.py            # Extract Kunitz chains from PDB files
-├── validate_hmm.py              # Run hmmsearch & compute confusion matrix
-├── evalue_analysis.py           # E-value threshold analysis & metrics
-│
-├── environment.yml
-├── requirements.txt
-└── README.md
+├── [README.md](README.md)
+├── [requirements.txt](requirements.txt)
+└── [environment.yml](environment.yml)
 ```
 
 ## Methods
