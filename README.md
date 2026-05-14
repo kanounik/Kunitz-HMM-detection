@@ -44,7 +44,7 @@ kunitz-hmm-profile/
 │   ├── kunitz_sequences.fasta        # Filtered sequences used for alignment
 │   ├── kunitz_aligned.fasta          # MAFFT multiple sequence alignment
 │   ├── positives.fasta               # Swiss-Prot positive set (368, PF00014)
-│   ├── negatives.fasta               # Not included in repo (too large)
+│   ├── negatives.fasta               # Not included in repo 
 │   ├── test_positives.fasta          # Balanced test positive set
 │   └── test_negatives.fasta          # Balanced test negative set
 │
