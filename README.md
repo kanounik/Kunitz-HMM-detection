@@ -5,6 +5,7 @@
 - [Overview](#overview)
 - [Background](#background)
 - [Repository Structure](#repository-structure)
+- [Pipeline](#pipeline)
 - [Methods](#methods)
 - [Results](#results)
 - [Dependencies](#dependencies)
