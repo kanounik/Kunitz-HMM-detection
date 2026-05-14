@@ -42,36 +42,34 @@ kunitz-hmm-profile/
 │   ├── kunitz_with_pdb.fasta         # Kunitz sequences with PDB structures
 │   ├── kunitz_all.fasta              # All collected Kunitz sequences
 │   ├── kunitz_sequences.fasta        # Filtered sequences used for alignment
-│   ├── kunitz_aligned.fasta          # MAFFT multiple sequence alignment
-│   ├── 
-│   ├── 
-│   ├── 
-│   └── 
+│   └── kunitz_aligned.fasta          # MAFFT multiple sequence alignment
 │
 ├── models/
 │   └── kunitz.hmm                    # Trained HMM profile (102 nodes)
 │
 ├── results/
-│   ├── hits_pos.tsv
-│   ├── hits_neg.tsv
-│   ├── confusion_matrix.tsv
-│   ├── performance_metrics.tsv
-│   ├── evalue_analysis.tsv
-│   ├── swissprot_hits.tsv
+│   ├── positives_ids.tsv             # IDs + lengths of 368 positive sequences (PF00014)
+│   ├── negatives_ids.tsv             # IDs + lengths of 368 sampled negative sequences
+│   ├── hits_pos.tsv                  # hmmsearch results on positive test set (363 hits)
+│   ├── hits_neg.tsv                  # hmmsearch results on negative test set (no hits)
+│   ├── confusion_matrix.tsv          # TP=363, FP=0, TN=368, FN=5
+│   ├── performance_metrics.tsv       # Sensitivity, Specificity, Precision, F1, MCC
+│   ├── evalue_analysis.tsv           # Metrics across 9 E-value thresholds
+│   ├── swissprot_hits.tsv            # 379 Kunitz hits across full Swiss-Prot
 │   └── figures/
-│       ├── confusion_matrices.png
-│       ├── roc_curve.png
-│       ├── mcc_thresholds.png
-│       └── hmm_logo.png
+│       ├── confusion_matrices.png    # 2-fold cross-validation confusion matrices
+│       ├── roc_curve.png             # ROC curve (AUC = 0.995, both folds)
+│       ├── mcc_thresholds.png        # MCC vs E-value threshold
+│       └── hmm_logo.png              # HMM sequence logo (102 positions)
 │
 ├── scripts/
-│   ├── download_pdb.py
-│   ├── extract_chains.py
-│   ├── validate_hmm.py
-│   ├── evalue_analysis.py
-│   ├── cross_validation.py
-│   ├── roc_curve.py
-│   └── swissprot.py
+│   ├── download_pdb.py               # Download 26 PDB structures
+│   ├── extract_chains.py             # Extract Kunitz chains from PDB files
+│   ├── validate_hmm.py               # hmmsearch + confusion matrix + metrics → TSV
+│   ├── evalue_analysis.py            # E-value threshold analysis → TSV
+│   ├── cross_validation.py           # 2-fold cross-validation
+│   ├── roc_curve.py                  # ROC curve generation (AUC = 0.995)
+│   └── swissprot.py                  # Scan full Swiss-Prot → TSV
 │
 ├── README.md
 ├── requirements.txt
