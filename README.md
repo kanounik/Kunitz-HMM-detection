@@ -77,12 +77,3 @@ kunitz-hmm-profile/
 ```
 
 ## Methods
-### 1. Structure Selection
-26 PDB structures containing Kunitz domains were retrieved using download_pdb.py, starting from the canonical BPTI structure (3TGI, chain I). Kunitz chains were then extracted with extract_chains.py. Sequences with PF00014 annotation were additionally retrieved from UniProt to supplement the training set.
-   
-### 2. Sequence Alignment & Seed Preparation
-The selected Kunitz sequences were aligned using MAFFT, producing kunitz_aligned.fasta. The resulting multiple sequence alignment was used directly as input for HMMER.
-
-### 3. HMM Training
-The profile HMM was built using HMMER hmmbuild, yielding a model with 102 nodes:
-
