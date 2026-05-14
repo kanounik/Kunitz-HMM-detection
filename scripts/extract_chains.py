@@ -1,16 +1,3 @@
-"""
-Script 2 :Extract Kunitz domain chains from PDB files
-=================================================================
-Fixes:
-- 1ADZ: residue numbering starts differently, use None (whole chain is short)
-- 2BS1: trim to Kunitz region (~60 aa)
-- 1YEL: trim to Kunitz domain 1 region
-- 3E8N: trim to Kunitz domain 1 region
-- 3WMP: trim to Kunitz region
-
-Requirements: pip install biopython
-"""
-
 from Bio import PDB
 from Bio.PDB import PDBParser, PDBIO, Select, PPBuilder
 import os
