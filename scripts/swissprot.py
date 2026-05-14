@@ -1,14 +1,3 @@
-#!/usr/bin/env python3
-"""
-swissprot.py
------------------
-Scans all Swiss-Prot sequences against the Kunitz HMM profile.
-Saves results directly as TSV.
-
-Usage:
-    python swissprot.py
-"""
-
 import subprocess
 import csv
 import os
@@ -62,9 +51,7 @@ def main():
         writer.writeheader()
         writer.writerows(rows)
 
-    # Delete temporary tbl immediately
-    os.remove(TMP_TBL)
-
+    
     # Summary
     hits_at_threshold = [r for r in rows if r["e_value"] <= THRESHOLD]
     print(f"\n=== Results ===")
