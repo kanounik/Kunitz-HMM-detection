@@ -35,7 +35,7 @@ The **Kunitz domain** is a short (~58 residues), disulfide-rich alpha+beta fold 
 ```text
 kunitz-hmm-profile/
 │
-├── pdb_files/                         # 26 downloaded PDB structures
+├── data/                         # 26 downloaded PDB structures
 ├── kunitz_chains/                     # Extracted Kunitz domain chains
 │
 ├── [kunitz_with_pdb.fasta](kunitz_with_pdb.fasta)   # Kunitz sequences with PDB structures
