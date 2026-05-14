@@ -71,7 +71,7 @@ kunitz-hmm-profile/
 │   ├── evalue_analysis.py
 │   ├── cross_validation.py
 │   ├── roc_curve.py
-│   └── scan_swissprot.py
+│   └── swissprot.py
 │
 ├── README.md
 ├── requirements.txt
