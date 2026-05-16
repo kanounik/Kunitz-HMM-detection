@@ -88,3 +88,4 @@ The selected Kunitz domain structures were structurally aligned using **PDBe-fol
 The profile HMM was built from  [`kunitz_aligned.fasta`](data/kunitz_aligned.fasta) using HMMER hmmbuild, producing  [`kunitz.hmm`](model/kunitz.hmm)kunitz.hmm with 102 nodes:
 ```bash
 hmmbuild kunitz.hmm kunitz_aligned.fasta
+A consistency test confirmed all 26/26 training sequences are recovered by the model.
