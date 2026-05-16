@@ -102,8 +102,6 @@ The validation set was extracted from **Swiss-Prot** (reviewed, manually curated
 
 [`validate_hmm.py`](scripts/validate_hmm.py) ran hmmsearch on both sets and saved the results to [`hits_pos.tsv`](results/hits_pos.tsv) and [`hits_neg.tsv`](results/hits_neg.tsv). Metrics were computed across 9 E-value thresholds via [`evalue_analysis.py`](scripts/evalue_analysis.py) and saved to [`evalue_analysis.tsv`](results/evalue_analysis.tsv). 2-fold cross-validation was performed with cross_validation.py and ROC curves generated with [`roc_curve.py`](scripts/roc_curve.py).
 
-### Performance Metrics
-
 | Metric | Formula |
 | :--- | :--- |
 | **Sensitivity (TPR)** | $TPR = \frac{TP}{TP + FN}$ |
@@ -111,3 +109,6 @@ The validation set was extracted from **Swiss-Prot** (reviewed, manually curated
 | **Precision (PPV)** | $PPV = \frac{TP}{TP + FP}$ |
 | **F1 Score** | $F1 = 2 \times \frac{Precision \times Sensitivity}{Precision + Sensitivity}$ |
 | **MCC** | $MCC = \frac{(TP \times TN) - (FP \times FN)}{\sqrt{(TP+FP)(TP+FN)(TN+FP)(TN+FN)}}$ |
+
+**6. Swiss-Prot Full Scan**
+All 565,361 Swiss-Prot sequences were scanned using scan_swissprot.py. Results were saved directly to swissprot_hits.tsv with no intermediate files produced.
