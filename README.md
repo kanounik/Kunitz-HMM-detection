@@ -110,5 +110,9 @@ The validation set was extracted from **Swiss-Prot** (reviewed, manually curated
 | **F1 Score** | $F1 = 2 \times \frac{Precision \times Sensitivity}{Precision + Sensitivity}$ |
 | **MCC** | $MCC = \frac{(TP \times TN) - (FP \times FN)}{\sqrt{(TP+FP)(TP+FN)(TN+FP)(TN+FN)}}$ |
 
+
 **6. Swiss-Prot Full Scan**
-All 565,361 Swiss-Prot sequences were scanned using scan_swissprot.py. Results were saved directly to swissprot_hits.tsv with no intermediate files produced.
+
+All 565,361 Swiss-Prot sequences were scanned using [`scan_swissprot.py`](scripts/scan_swissprot.py). Results were saved directly to [`swissprot_hits.tsv`](scripts/swissprot_hits.tsv) with no intermediate files produced.
+
+## Results
