@@ -93,7 +93,7 @@ A ***consistency test*** confirmed all **26/26** training sequences are recovere
 
 **4. Validation Dataset**
 
-The validation set was extracted from **Swiss-Prot** (reviewed, manually curated entries only, fragments excluded). Sequence accessions are available in [`positives_ids.tsv`](results/positives_ids.tsv) and [`negatives_ids.tsv`](results/negatives_ids.tsv) for full reproducibility.
+The validation set was extracted from **Swiss-Prot** (reviewed, manually curated entries only, fragments excluded). Sequence accessions are available in [`positives.tsv`](results/positives.tsv) and [`negatives.tsv`](results/negatives.tsv) for full reproducibility.
 
 - Positive set — 368 proteins with an annotated PF00014 domain in UniProt
 - Negative set — 368 proteins randomly sampled (random seed = 42) from 564,993 non-Kunitz Swiss-Prot sequences
