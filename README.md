@@ -79,3 +79,12 @@ kunitz-hmm-profile/
 
 26 PDB structures containing Kunitz domains were downloaded using [`download_pdb.py`](scripts/download_pdb.py), starting from the canonical BPTI structure ([`3TGI.pdb`](data/3TGI.pdb), chain I). Kunitz chains were extracted with [`extract_chains.py`](scripts/extract_chains.py). Sequences with a PF00014 annotation were additionally retrieved from UniProt to enrich the training set, stored in [`kunitz_all.fasta`](data/kunitz_all.fasta).
 
+**2. Multiple Sequence Alignment**
+
+The selected Kunitz domain structures were structurally aligned using **PDBe-fold**. The resulting alignment was saved as [`kunitz_aligned.fasta`](data/kunitz_aligned.fasta) and used directly as input for HMMER.
+
+**3. HMM Training**
+
+The profile HMM was built from kunitz_aligned.fasta using HMMER hmmbuild, producing kunitz.hmm with 102 nodes:
+```bash
+hmmbuild kunitz.hmm kunitz_aligned.fasta
