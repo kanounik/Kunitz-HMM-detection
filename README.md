@@ -42,7 +42,7 @@ kunitz-hmm-profile/
 │   ├── kunitz_sequences.fasta        # Filtered sequences used for alignment
 │   └── kunitz_aligned.fasta          # MAFFT multiple sequence alignment
 │
-├── models/
+├── model/
 │   └── kunitz.hmm                    # Trained HMM profile (102 nodes)
 │
 ├── results/
@@ -85,6 +85,6 @@ The selected Kunitz domain structures were structurally aligned using **PDBe-fol
 
 **3. HMM Training**
 
-The profile HMM was built from kunitz_aligned.fasta using HMMER hmmbuild, producing kunitz.hmm with 102 nodes:
+The profile HMM was built from  [`kunitz_aligned.fasta`](data/kunitz_aligned.fasta) using HMMER hmmbuild, producing  [`kunitz.hmm`](model/kunitz.hmm)kunitz.hmm with 102 nodes:
 ```bash
 hmmbuild kunitz.hmm kunitz_aligned.fasta
