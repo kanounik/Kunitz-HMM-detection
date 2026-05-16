@@ -97,3 +97,9 @@ The validation set was extracted from **Swiss-Prot** (reviewed, manually curated
 
 - Positive set — 368 proteins with an annotated PF00014 domain in UniProt
 - Negative set — 368 proteins randomly sampled (random seed = 42) from 564,993 non-Kunitz Swiss-Prot sequences
+
+**5. Performance Evaluation**
+
+[`validate_hmm.py`](scripts/validate_hmm.py) ran hmmsearch on both sets and saved the results to [`hits_pos.tsv`](results/hits_pos.tsv) and [`hits_neg.tsv`](results/hits_neg.tsv). Metrics were computed across 9 E-value thresholds via [`evalue_analysis.py`](scripts/evalue_analysis.py) and saved to [`evalue_analysis.tsv`](results/evalue_analysis.tsv). 2-fold cross-validation was performed with cross_validation.py and ROC curves generated with [`roc_curve.py`](scripts/roc_curve.py).
+
+
