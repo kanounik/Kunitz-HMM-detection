@@ -113,6 +113,6 @@ The validation set was extracted from **Swiss-Prot** (reviewed, manually curated
 
 **6. Swiss-Prot Full Scan**
 
-All 565,361 Swiss-Prot sequences were scanned using [`swissprot.py`](scripts/swissprot.py). Results were saved directly to [`swissprot_hits.tsv`](scripts/swissprot_hits.tsv) with no intermediate files produced.
+All 565,361 Swiss-Prot sequences were scanned using [`swissprot.py`](scripts/swissprot.py). Results were saved directly to [`swissprot_hits.tsv`](results/swissprot_hits.tsv) with no intermediate files produced.
 
 ## Results
