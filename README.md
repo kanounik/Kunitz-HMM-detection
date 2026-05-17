@@ -1,4 +1,4 @@
-## Kunitz Domain Profile HMM
+gi## Kunitz Domain Profile HMM
 
 ## Table of Contents
 
@@ -116,3 +116,23 @@ The validation set was extracted from **Swiss-Prot** (reviewed, manually curated
 All 565,361 Swiss-Prot sequences were scanned using [`swissprot.py`](scripts/swissprot.py). Results were saved directly to [`swissprot_hits.tsv`](results/swissprot_hits.tsv) with no intermediate files produced.
 
 ## Results
+**Consistency Test**
+
+All **26/26** training sequences were recovered by the model — HMM built correctly ✅
+
+**E-value Threshold Analysis**
+
+Full results in [` evalue_analysis.tsv`](results/evalue_analysis.tsv).
+
+| E-value | TP | FN | FP | TN | Sens | Spec | Prec | F1 | MCC |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1e-50 | 3 | 365 | 0 | 368 | 0.0082 | 1.0000 | 1.0000 | 0.0162 | 0.0640 |
+| 1e-30 | 18 | 350 | 0 | 368 | 0.0489 | 1.0000 | 1.0000 | 0.0933 | 0.1583 |
+| 1e-20 | 36 | 332 | 0 | 368 | 0.0978 | 1.0000 | 1.0000 | 0.1782 | 0.2268 |
+| 1e-10 | 281 | 87 | 0 | 368 | 0.7636 | 1.0000 | 1.0000 | 0.8659 | 0.7859 |
+| 1e-05 | 358 | 10 | 0 | 368 | 0.9728 | 1.0000 | 1.0000 | 0.9862 | 0.9732 |
+| **1e-03** | **363** | **5** | **0** | **368** | **0.9864** | **1.0000** | **1.0000** | **0.9932** | **0.9865** |
+| 1e-02 | 363 | 5 | 0 | 368 | 0.9864 | 1.0000 | 1.0000 | 0.9932 | 0.9865 |
+| 0.1 | 363 | 5 | 0 | 368 | 0.9864 | 1.0000 | 1.0000 | 0.9932 | 0.9865 |
+| 1.0 | 364 | 4 | 0 | 368 | 0.9891 | 1.0000 | 1.0000 | 0.9945 | 0.9892 |
+
