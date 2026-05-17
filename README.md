@@ -206,7 +206,8 @@ The trained model's position conservation visualized across 102 nodes:
 ## Dependencies
 
 **Python ≥ 3.8**
-Also biopython, numpy, matplotlib, seaborn, requests
+
+(Also biopython, numpy, matplotlib, seaborn, requests)
 
 **External Tools**
 | Tool | Version | Purpose | Install |
