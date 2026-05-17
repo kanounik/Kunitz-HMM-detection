@@ -205,5 +205,18 @@ The trained model's position conservation visualized across 102 nodes:
 
 ## Dependencies
 
+**Python ≥ 3.8**
+Also biopython, numpy, matplotlib, seaborn, requests
+
+**External Tools**
+| Tool | Version | Purpose | Install |
+| :--- | :--- | :--- | :--- |
+| **HMMER** | $\ge$ 3.3 | Build & search HMM profiles | `conda install -c bioconda hmmer` |
+| **PDBe-fold** | web | Structural alignment | [ebi.ac.uk/msd-srv/ssm/](https://www.ebi.ac.uk/msd-srv/ssm/) |
+
+## Data Sources
+
+
+
 
 
