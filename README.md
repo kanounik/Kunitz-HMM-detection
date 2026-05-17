@@ -175,7 +175,7 @@ Full metrics → [` performance_metrics.tsv`](results/performance_metrics.tsv)
 | **MCC** | 0.9892 | 0.9838 |
 | **AUC** | 0.995 | 0.995 |
 
-<img width="683" height="217" alt="confusion_matrices" src="https://github.com/user-attachments/assets/4c7a29de-a8d3-492b-8e40-5627847f9276" />
+<img width="683" height="317" alt="confusion_matrices" src="https://github.com/user-attachments/assets/4c7a29de-a8d3-492b-8e40-5627847f9276" />
 
 
 <img width="400" height="400" alt="roc_curve" src="https://github.com/user-attachments/assets/53e98e3a-da13-47f4-9e59-2046dc944920" />
