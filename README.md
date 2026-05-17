@@ -140,6 +140,26 @@ MCC reaches a stable plateau from **1e-5** onwards. The optimal threshold is **E
 
 <img width="1200" height="600" alt="mcc_thresholds" src="https://github.com/user-attachments/assets/29e4cd5f-0414-4ff8-8968-c165686163ef" />
 
+**Overall Validation (E-value ≤ 1e-3)**
+
+Full confusion matrix → [` confusion_matrix.tsv`](results/confusion_matrix.tsv)
+
+| | Predicted + | Predicted - |
+| :--- | :--- | :--- |
+| **Actual +** | TP = 363 | FN = 5 |
+| **Actual -** | FP = 0 | TN = 368 |
+
+Full metrics → [` performance_metrics.tsv`](results/performance_metrics.tsv)
+
+| Metric | Value |
+| :--- | :--- |
+| Sensitivity | 0.9864 |
+| Specificity | 1.0000 |
+| Precision | 1.0000 |
+| F1 | 0.9932 |
+| MCC | 0.9865 |
+
+**2-Fold Cross-Validation (E-value ≤ 1e-3)**
 
 
 
