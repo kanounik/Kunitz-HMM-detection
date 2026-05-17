@@ -136,3 +136,10 @@ Full results in [` evalue_analysis.tsv`](results/evalue_analysis.tsv).
 | 0.1 | 363 | 5 | 0 | 368 | 0.9864 | 1.0000 | 1.0000 | 0.9932 | 0.9865 |
 | 1.0 | 364 | 4 | 0 | 368 | 0.9891 | 1.0000 | 1.0000 | 0.9945 | 0.9892 |
 
+MCC reaches a stable plateau from **1e-5** onwards. The optimal threshold is **E-value ≤ 1e-3**.
+
+<img width="1200" height="600" alt="mcc_thresholds" src="https://github.com/user-attachments/assets/29e4cd5f-0414-4ff8-8968-c165686163ef" />
+
+
+
+
