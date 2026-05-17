@@ -159,7 +159,28 @@ Full metrics → [` performance_metrics.tsv`](results/performance_metrics.tsv)
 | F1 | 0.9932 |
 | MCC | 0.9865 |
 
+
+
 **2-Fold Cross-Validation (E-value ≤ 1e-3)**
+
+| | Fold 1 | Fold 2 |
+| :--- | :--- | :--- |
+| **TP** | 182 | 181 |
+| **FN** | 2 | 3 |
+| **FP** | 0 | 0 |
+| **TN** | 184 | 184 |
+| **Sensitivity** | 0.9891 | 0.9837 |
+| **Specificity** | 1.0000 | 1.0000 |
+| **Precision** | 1.0000 | 1.0000 |
+| **MCC** | 0.9892 | 0.9838 |
+| **AUC** | 0.995 | 0.995 |
+
+<img width="1483" height="617" alt="confusion_matrices" src="https://github.com/user-attachments/assets/4c7a29de-a8d3-492b-8e40-5627847f9276" />
+
+
+<img width="900" height="900" alt="roc_curve" src="https://github.com/user-attachments/assets/53e98e3a-da13-47f4-9e59-2046dc944920" />
+
+
 
 
 
