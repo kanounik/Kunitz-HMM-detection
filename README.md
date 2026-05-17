@@ -1,4 +1,4 @@
-### Kunitz Domain Profile HMM
+# Kunitz Domain Profile HMM
 
 ## Table of Contents
 
