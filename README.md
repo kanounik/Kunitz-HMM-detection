@@ -199,6 +199,9 @@ Scanning all **565,361 Swiss-Prot sequences** at E-value ≤ 1e-3:
 
 **HMM Sequence Logo**
 
+The trained model's position conservation visualized across 102 nodes:
+
+<img width="2664" height="605" alt="hmm_logo" src="https://github.com/user-attachments/assets/bef82c69-c780-48d7-8a08-dcd948b51149" />
 
 
 
