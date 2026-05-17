@@ -5,8 +5,7 @@
 - [Overview](#overview)
 - [Background](#background)
 - [Repository Structure](#repository-structure)
-- [Methods](#methods)
-- [Results](#results)
+- [Methods](#methods)- [Results](#results)
 - [Dependencies](#dependencies)
 - [Data Sources](#data-sources)
 - [Authors](#authors)
@@ -40,7 +39,7 @@ kunitz-hmm-profile/
 │   ├── kunitz_with_pdb.fasta         # Kunitz sequences with PDB structures
 │   ├── kunitz_all.fasta              # All collected Kunitz sequences
 │   ├── kunitz_sequences.fasta        # Filtered sequences used for alignment
-│   └── kunitz_aligned.fasta          # MAFFT multiple sequence alignment
+│   └── kunitz_aligned.fasta          # PDBe-fold structural alignment
 │
 ├── model/
 │   └── kunitz.hmm                    # Trained HMM profile (102 nodes)
@@ -85,7 +84,7 @@ The selected Kunitz domain structures were structurally aligned using **PDBe-fol
 
 **3. HMM Training**
 
-The profile HMM was built from  [`kunitz_aligned.fasta`](data/kunitz_aligned.fasta) using HMMER hmmbuild, producing  [`kunitz.hmm`](model/kunitz.hmm)kunitz.hmm with 102 nodes:
+The profile HMM was built from  [`kunitz_aligned.fasta`](data/kunitz_aligned.fasta) using HMMER hmmbuild, producing  [`kunitz.hmm`](model/kunitz.hmm) with 102 nodes:
 ```bash
 hmmbuild kunitz.hmm kunitz_aligned.fasta
 ```
