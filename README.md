@@ -1,4 +1,4 @@
-gi## Kunitz Domain Profile HMM
+### Kunitz Domain Profile HMM
 
 ## Table of Contents
 
@@ -226,7 +226,9 @@ The trained model's position conservation visualized across 102 nodes:
 ## Authors
 
 **Kimia Kanouni**
+
 MSc Bioinformatics, University of Bologna
+
 Contact: [kimia.kanouni@studio.unibo.it]
 
 Prof. Emidio Capriotti — http://biofold.org/
