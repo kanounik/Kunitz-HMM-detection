@@ -217,7 +217,18 @@ The trained model's position conservation visualized across 102 nodes:
 
 ## Data Sources
 
+| Resource | URL | Usage |
+| :--- | :--- | :--- |
+| **Protein Data Bank** | [rcsb.org](https://www.rcsb.org) | 26 Kunitz domain structures |
+| **UniProt / Swiss-Prot** | [uniprot.org](https://www.uniprot.org) | Positive set (PF00014) & full scan |
+| **PFAM via InterPro** | [PF00014](https://www.ebi.ac.uk/interpro/entry/pfam/PF00014/) | Domain annotation reference |
 
+## Authors
 
+**Kimia Kanouni**
+MSc Bioinformatics, University of Bologna
+Contact: [kimia.kanouni@studio.unibo.it]
+
+Prof. Emidio Capriotti — http://biofold.org/
 
 
