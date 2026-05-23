@@ -95,8 +95,8 @@ A ***consistency test*** confirmed all **26/26** training sequences are recovere
 
 The validation set was extracted from **Swiss-Prot** (reviewed, manually curated entries only, fragments excluded). Sequence accessions are available in [`positives.tsv`](results/positives.tsv) and [`negatives.tsv`](results/negatives.tsv) for full reproducibility.
 
-- Positive set — 368 proteins with an annotated PF00014 domain in UniProt
-- Negative set — 368 proteins randomly sampled (random seed = 42) from 564,993 non-Kunitz Swiss-Prot sequences
+- Positive set — 368 proteins with an annotated PF00014 domain in UniProt, To prevent data leakage, 6 human proteins present in the training set were excluded, leaving 362
+- Negative set — 368 proteins randomly sampled (random seed = 42) from 564,993 non-Kunitz Swiss-Prot sequences,  balanced to match the positive set.
 
 **5. Performance Evaluation**
 
@@ -126,15 +126,15 @@ Full results in [` evalue_analysis.tsv`](results/evalue_analysis.tsv).
 
 | E-value | TP | FN | FP | TN | Sens | Spec | Prec | F1 | MCC |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1e-50 | 3 | 365 | 0 | 368 | 0.0082 | 1.0000 | 1.0000 | 0.0162 | 0.0640 |
-| 1e-30 | 18 | 350 | 0 | 368 | 0.0489 | 1.0000 | 1.0000 | 0.0933 | 0.1583 |
-| 1e-20 | 36 | 332 | 0 | 368 | 0.0978 | 1.0000 | 1.0000 | 0.1782 | 0.2268 |
-| 1e-10 | 281 | 87 | 0 | 368 | 0.7636 | 1.0000 | 1.0000 | 0.8659 | 0.7859 |
-| 1e-05 | 358 | 10 | 0 | 368 | 0.9728 | 1.0000 | 1.0000 | 0.9862 | 0.9732 |
-| **1e-03** | **363** | **5** | **0** | **368** | **0.9864** | **1.0000** | **1.0000** | **0.9932** | **0.9865** |
-| 1e-02 | 363 | 5 | 0 | 368 | 0.9864 | 1.0000 | 1.0000 | 0.9932 | 0.9865 |
-| 0.1 | 363 | 5 | 0 | 368 | 0.9864 | 1.0000 | 1.0000 | 0.9932 | 0.9865 |
-| 1.0 | 364 | 4 | 0 | 368 | 0.9891 | 1.0000 | 1.0000 | 0.9945 | 0.9892 |
+| 1e-50 | 3 | 359 | 0 | 362 | 0.0083 | 1.0000 | 1.0000 | 0.0164 | 0.0645 |
+| 1e-30 | 18 | 344 | 0 | 362 | 0.0497 | 1.0000 | 1.0000 | 0.0947 | 0.1602 |
+| 1e-20 | 36 | 327 | 0 | 362 | 0.0967 | 1.0000 | 1.0000 | 0.1763 | 0.2251 |
+| 1e-10 | 276 | 86 | 0 | 362 | 0.7624 | 1.0000 | 1.0000 | 0.8651 | 0.7849 |
+| 1e-05 | 352 | 10 | 0 | 362 | 0.9724 | 1.0000 | 1.0000 | 0.9860 | 0.9727 |
+| **1e-03** | **357** | **5** | **0** | **362** | **0.9862** | **1.0000** | **1.0000** | **0.9930** | **0.9863** |
+| 1e-02 | 357 | 5 | 0 | 362 | 0.9862 | 1.0000 | 1.0000 | 0.9930 | 0.9863 |
+| 0.1 | 357 | 5 | 0 | 362 | 0.9862 | 1.0000 | 1.0000 | 0.9930 | 0.9863 |
+| 1.0 | 358 | 4 | 0 | 362 | 0.9890 | 1.0000 | 1.0000 | 0.9944 | 0.9891 |
 
 MCC reaches a stable plateau from **1e-5** onwards. The optimal threshold is **E-value ≤ 1e-3**.
 
@@ -146,18 +146,18 @@ Full confusion matrix → [` confusion_matrix.tsv`](results/confusion_matrix.tsv
 
 | | Predicted + | Predicted - |
 | :--- | :--- | :--- |
-| **Actual +** | TP = 363 | FN = 5 |
-| **Actual -** | FP = 0 | TN = 368 |
+| **Actual +** | TP = 357 | FN = 5 |
+| **Actual -** | FP = 0 | TN = 362 |
 
 Full metrics → [` performance_metrics.tsv`](results/performance_metrics.tsv)
 
 | Metric | Value |
 | :--- | :--- |
-| Sensitivity | 0.9864 |
+| Sensitivity | 0.9862 |
 | Specificity | 1.0000 |
 | Precision | 1.0000 |
-| F1 | 0.9932 |
-| MCC | 0.9865 |
+| F1 | 0.9930 |
+| MCC | 0.9863 |
 
 
 
@@ -194,7 +194,7 @@ Full results →  [` swissprot_hits.tsv`](results/swissprot_hits.tsv)
 Scanning all **565,361 Swiss-Prot sequences** at E-value ≤ 1e-3:
 
 - **379 proteins** detected as containing a Kunitz domain
-- **11 novel hits** beyond the 368 known annotated proteins — potentially unannotated Kunitz domains
+- **17 novel hits** beyond the 3622 known annotated proteins — potentially unannotated Kunitz domains
 - Distribution spans spiders, snakes, humans, and other metazoa, consistent with the known restriction of this fold to the animal kingdom
 
 **HMM Sequence Logo**
