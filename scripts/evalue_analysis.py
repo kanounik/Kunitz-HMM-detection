@@ -41,7 +41,7 @@ n = len(pos_ids)
 # Test multiple thresholds
 thresholds = [1e-50, 1e-30, 1e-20, 1e-10, 1e-5, 1e-3, 1e-2, 0.1, 1.0]
  
-# Print to terminal
+# Print to terminal (unchanged)
 print(f"{'E-value':<12} {'TP':>5} {'FN':>5} {'FP':>5} {'TN':>5} {'Sens':>7} {'Spec':>7} {'Prec':>7} {'F1':>7} {'MCC':>7}")
 print("-" * 80)
  

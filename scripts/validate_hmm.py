@@ -4,8 +4,20 @@ import csv
 import os
 import tempfile
 
-RANDOM_SEED = 42
+RANDOM_SEED      = 42
 EVALUE_THRESHOLD = 1e-3
+
+# Human UniProt accessions used in the training set (from extract_chains.py)
+# These must be excluded from the test set to avoid data leakage
+TRAINING_HUMAN_ACCESSIONS = {
+    "P05067",  # APP  — 1AAP human amyloid precursor Kunitz domain
+    "P10646",  # TFPI1 — 1ADZ human Kunitz domain
+    "P48307",  # TFPI2 — 1ZR0 human Kunitz domain
+    "P02760",  # AMBP  — 1QNJ human bikunin Kunitz domain
+    "Q06828",  # APLP2 — 1RW6 human Kunitz domain
+    "O43278",  # SPINT1 — 1YEL human Kunitz domain 1
+    "O43291",  # SPINT2 — 3E8N human Kunitz domain 1
+}
 
 def parse_fasta(path):
     records = {}
@@ -42,7 +54,6 @@ def save_ids_tsv(records, label, path):
 
 def run_hmmsearch(hmm, fasta, tsv_path):
     """Run hmmsearch and save results directly as TSV. No .tbl file kept."""
-    # Use a temp file that is automatically deleted
     with tempfile.NamedTemporaryFile(mode="w", suffix=".tmp", delete=False) as tmp:
         tmp_path = tmp.name
 
@@ -73,7 +84,6 @@ def run_hmmsearch(hmm, fasta, tsv_path):
                 "description": description
             })
 
-    # Save as TSV
     with open(tsv_path, "w", newline="") as f:
         writer = csv.DictWriter(
             f,
@@ -83,7 +93,9 @@ def run_hmmsearch(hmm, fasta, tsv_path):
         writer.writeheader()
         writer.writerows(rows)
     print(f"  Saved: {tsv_path}")
-    
+
+    os.remove(tmp_path)
+    return hits
 
 def save_confusion_matrix_tsv(tp, fp, tn, fn, path):
     with open(path, "w", newline="") as f:
@@ -114,10 +126,17 @@ def main():
     random.seed(RANDOM_SEED)
 
     print("Loading positives...")
-    positives = parse_fasta("positives.fasta")
-    print(f"  {len(positives)} sequences")
+    positives_all = parse_fasta("positives.fasta")
+    print(f"  {len(positives_all)} sequences total")
 
-    print("Loading negatives (large file, please wait)...")
+    # Remove human training proteins to prevent data leakage
+    positives = {acc: seq for acc, seq in positives_all.items()
+                 if acc not in TRAINING_HUMAN_ACCESSIONS}
+    removed = len(positives_all) - len(positives)
+    print(f"  Removed {removed} human training proteins to prevent data leakage")
+    print(f"  {len(positives)} sequences remaining for testing")
+
+    print("\nLoading negatives (large file, please wait)...")
     negatives = parse_fasta("negatives.fasta")
     print(f"  {len(negatives)} sequences")
 
@@ -164,7 +183,7 @@ def main():
         if pos_hits.get(acc, 10) > EVALUE_THRESHOLD:
             print(f"  {acc}  evalue={pos_hits.get(acc, 'not found')}")
             count += 1
-            if count >= 5:
+            if count >= 10:
                 print("  ...")
                 break
 
@@ -174,7 +193,7 @@ def main():
         if ev <= EVALUE_THRESHOLD:
             print(f"  {acc}  evalue={ev:.2e}")
             count += 1
-            if count >= 5:
+            if count >= 10:
                 print("  ...")
                 break
 

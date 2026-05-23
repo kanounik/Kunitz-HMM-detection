@@ -1,11 +1,22 @@
+#!/usr/bin/env python3
+"""
+swissprot.py
+------------
+Scans all Swiss-Prot sequences against the Kunitz HMM profile.
+Saves results directly as TSV. No .tbl files kept.
+
+Usage:
+    python swissprot.py
+"""
+
 import subprocess
 import csv
 import os
+import tempfile
 
 HMM        = "kunitz.hmm"
 FASTA      = "swissprot_all.fasta"
 OUTPUT_TSV = "swissprot_hits.tsv"
-TMP_TBL    = "_tmp_swissprot.tbl"
 THRESHOLD  = 1e-3
 
 def main():
@@ -15,18 +26,22 @@ def main():
     print(f"  Output : {OUTPUT_TSV}")
     print()
 
+    # Create a temporary file for hmmsearch output
+    with tempfile.NamedTemporaryFile(mode="w", suffix=".tmp", delete=False) as tmp:
+        tmp_path = tmp.name
+
     # Run hmmsearch
     print("Running hmmsearch (this may take a few minutes)...")
     subprocess.run(
-        ["hmmsearch", "--tblout", TMP_TBL, "-E", "1000",
+        ["hmmsearch", "--tblout", tmp_path, "-E", "1000",
          "--cpu", "4", HMM, FASTA],
         capture_output=True
     )
     print("  Done.")
 
-    # Parse and save as TSV
+    # Parse results
     rows = []
-    with open(TMP_TBL) as f:
+    with open(tmp_path) as f:
         for line in f:
             if line.startswith("#"):
                 continue
@@ -41,7 +56,10 @@ def main():
                 "description": " ".join(cols[18:]) if len(cols) > 18 else ""
             })
 
-    # Save ALL hits (any e-value) to TSV
+    # Delete temporary file immediately
+    os.remove(tmp_path)
+
+    # Save ALL hits to TSV
     with open(OUTPUT_TSV, "w", newline="") as f:
         writer = csv.DictWriter(
             f,
@@ -51,12 +69,10 @@ def main():
         writer.writeheader()
         writer.writerows(rows)
 
-    
     # Summary
     hits_at_threshold = [r for r in rows if r["e_value"] <= THRESHOLD]
     print(f"\n=== Results ===")
-    print(f"  Total sequences scanned : see {FASTA}")
-    print(f"  Total hits (any e-value): {len(rows)}")
+    print(f"  Total hits (any e-value)      : {len(rows)}")
     print(f"  Hits at E-value <= {THRESHOLD} : {len(hits_at_threshold)}")
     print(f"\n  Saved: {OUTPUT_TSV}")
 
