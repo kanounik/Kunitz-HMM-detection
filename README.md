@@ -40,19 +40,19 @@ kunitz-hmm-profile/
 │   ├── kunitz_with_pdb.fasta         # Kunitz sequences with PDB structures
 │   ├── kunitz_all.fasta              # All collected Kunitz sequences
 │   ├── kunitz_sequences.fasta        # Filtered sequences used for alignment
-│   └── kunitz_aligned.fasta          # PDBe-fold structural alignment
+│   └── kunitz_aligned.fasta          # MAFFT multiple sequence alignment
 │
-├── model/
+├── models/
 │   └── kunitz.hmm                    # Trained HMM profile (102 nodes)
 │
 ├── results/
-│   ├── positives_ids.tsv             # IDs + lengths of 368 positive sequences (PF00014)
-│   ├── negatives_ids.tsv             # IDs + lengths of 368 sampled negative sequences
-│   ├── hits_pos.tsv                  # hmmsearch results on positive test set (363 hits)
-│   ├── hits_neg.tsv                  # hmmsearch results on negative test set (no hits)
+│   ├── positives_ids.tsv             # Accessions + lengths of 368 positive sequences
+│   ├── negatives_ids.tsv             # Accessions + lengths of 368 sampled negatives
+│   ├── hits_pos.tsv                  # hmmsearch results on positive test set (363/368 hits)
+│   ├── hits_neg.tsv                  # hmmsearch results on negative test set (0 hits)
 │   ├── confusion_matrix.tsv          # TP=363, FP=0, TN=368, FN=5
 │   ├── performance_metrics.tsv       # Sensitivity, Specificity, Precision, F1, MCC
-│   ├── evalue_analysis.tsv           # Metrics across 9 E-value thresholds
+│   ├── evalue_analysis.tsv           # Full metrics across 9 E-value thresholds
 │   ├── swissprot_hits.tsv            # 379 Kunitz hits across full Swiss-Prot
 │   └── figures/
 │       ├── confusion_matrices.png    # 2-fold cross-validation confusion matrices
@@ -63,7 +63,7 @@ kunitz-hmm-profile/
 ├── scripts/
 │   ├── download_pdb.py               # Download 26 PDB structures
 │   ├── extract_chains.py             # Extract Kunitz chains from PDB files
-│   ├── validate_hmm.py               # hmmsearch + confusion matrix + metrics → TSV
+│   ├── validate_hmm.py               # hmmsearch + IDs + confusion matrix + metrics → TSV
 │   ├── evalue_analysis.py            # E-value threshold analysis → TSV
 │   ├── cross_validation.py           # 2-fold cross-validation
 │   ├── roc_curve.py                  # ROC curve generation (AUC = 0.995)
