@@ -40,17 +40,17 @@ kunitz-hmm-profile/
 │   ├── kunitz_with_pdb.fasta         # Kunitz sequences with PDB structures
 │   ├── kunitz_all.fasta              # All collected Kunitz sequences
 │   ├── kunitz_sequences.fasta        # Filtered sequences used for alignment
-│   └── kunitz_aligned.fasta          # MAFFT multiple sequence alignment
-│
+│   └── kunitz_aligned.fasta          # PDBe-fold structural alignment
+│ 
 ├── models/
 │   └── kunitz.hmm                    # Trained HMM profile (102 nodes)
 │
 ├── results/
-│   ├── positives_ids.tsv             # Accessions + lengths of 368 positive sequences
-│   ├── negatives_ids.tsv             # Accessions + lengths of 368 sampled negatives
-│   ├── hits_pos.tsv                  # hmmsearch results on positive test set (363/368 hits)
+│   ├── positives_ids.tsv             # Accessions + lengths of 362 positive sequences
+│   ├── negatives_ids.tsv             # Accessions + lengths of 362 sampled negatives
+│   ├── hits_pos.tsv                  # hmmsearch results on positive test set (357/362 hits)
 │   ├── hits_neg.tsv                  # hmmsearch results on negative test set (0 hits)
-│   ├── confusion_matrix.tsv          # TP=363, FP=0, TN=368, FN=5
+│   ├── confusion_matrix.tsv          # TP=357, FP=0, TN=362, FN=5
 │   ├── performance_metrics.tsv       # Sensitivity, Specificity, Precision, F1, MCC
 │   ├── evalue_analysis.tsv           # Full metrics across 9 E-value thresholds
 │   ├── swissprot_hits.tsv            # 379 Kunitz hits across full Swiss-Prot
@@ -96,7 +96,7 @@ A ***consistency test*** confirmed all **26/26** training sequences are recovere
 The validation set was extracted from **Swiss-Prot** (reviewed, manually curated entries only, fragments excluded). Sequence accessions are available in [`positives.tsv`](results/positives.tsv) and [`negatives.tsv`](results/negatives.tsv) for full reproducibility.
 
 - Positive set — 368 proteins with an annotated PF00014 domain in UniProt, To prevent data leakage, 6 human proteins present in the training set were excluded, leaving 362
-- Negative set — 368 proteins randomly sampled (random seed = 42) from 564,993 non-Kunitz Swiss-Prot sequences,  balanced to match the positive set.
+- Negative set — 362 proteins randomly sampled (random seed = 42) from 564,993 non-Kunitz Swiss-Prot sequences,  balanced to match the positive set.
 
 **5. Performance Evaluation**
 
@@ -173,7 +173,7 @@ Full metrics → [` performance_metrics.tsv`](results/performance_metrics.tsv)
 | **Specificity** | 1.0000 | 1.0000 |
 | **Precision** | 1.0000 | 1.0000 |
 | **MCC** | 0.9892 | 0.9838 |
-| **AUC** | 0.995 | 0.995 |
+| **AUC** | 0.9945 | 0.9945 |
 
 <img width="683" height="317" alt="confusion_matrices" src="https://github.com/user-attachments/assets/4c7a29de-a8d3-492b-8e40-5627847f9276" />
 
@@ -194,7 +194,7 @@ Full results →  [` swissprot_hits.tsv`](results/swissprot_hits.tsv)
 Scanning all **565,361 Swiss-Prot sequences** at E-value ≤ 1e-3:
 
 - **379 proteins** detected as containing a Kunitz domain
-- **17 novel hits** beyond the 3622 known annotated proteins — potentially unannotated Kunitz domains
+- **17 novel hits** beyond the 362 known annotated proteins — potentially unannotated Kunitz domains
 - Distribution spans spiders, snakes, humans, and other metazoa, consistent with the known restriction of this fold to the animal kingdom
 
 **HMM Sequence Logo**
