@@ -124,12 +124,10 @@ Sequence accessions available in:
 [`positives_ids.tsv`](results/hmm/positives_ids.tsv), [`positives_ids.tsv`](results/hmm/positives_ids.tsv), [`negatives_ids.tsv`](results/hmm/negatives_ids.tsv), [`blast_positives_ids.tsv`](results/blast/blast_positives_ids.tsv), [`blast_negatives_ids.tsv`](results/blast/blast_negatives_ids.tsv).
 
 
-- Positive set — 368 proteins with an annotated PF00014 domain in UniProt, To prevent data leakage, 6 human proteins present in the training set were excluded, leaving 362
-- Negative set — 362 proteins randomly sampled (random seed = 42) from 564,993 non-Kunitz Swiss-Prot sequences,  balanced to match the positive set.
 
 **6. Performance Evaluation**
 
-[`validate_hmm.py`](scripts/validate_hmm.py) ran hmmsearch on both sets and saved the results to [`hits_pos.tsv`](results/hits_pos.tsv) and [`hits_neg.tsv`](results/hits_neg.tsv). Metrics were computed across 9 E-value thresholds via [`evalue_analysis.py`](scripts/evalue_analysis.py) and saved to [`evalue_analysis.tsv`](results/evalue_analysis.tsv). 2-fold cross-validation was performed with cross_validation.py and ROC curves generated with [`roc_curve.py`](scripts/roc_curve.py).
+Both methods were evaluated across 9 E-value thresholds using:
 
 | Metric | Formula |
 | :--- | :--- |
@@ -142,7 +140,7 @@ Sequence accessions available in:
 
 **7. Swiss-Prot Full Scan**
 
-All 565,361 Swiss-Prot sequences were scanned using [`swissprot.py`](scripts/swissprot.py). Results were saved directly to [`swissprot_hits.tsv`](results/swissprot_hits.tsv) with no intermediate files produced.
+All 565,361 Swiss-Prot sequences were scanned using the pHMM via  [`swissprot.py`](scripts/swissprot.py), saving results to  [`swissprot_hits.tsv`](results/swissprot_hits.tsv).
 
 ## Results
 **Consistency Test**
@@ -169,28 +167,18 @@ MCC reaches a stable plateau from **1e-5** onwards. The optimal threshold is **E
 
 <img width="600" height="300" alt="mcc_thresholds" src="https://github.com/user-attachments/assets/29e4cd5f-0414-4ff8-8968-c165686163ef" />
 
-**Overall Validation (E-value ≤ 1e-3)**
+**HMM — Overall Validation (E-value ≤ 1e-3)**
 
 Full confusion matrix → [` confusion_matrix.tsv`](results/confusion_matrix.tsv)
+Full metrics → [` performance_metrics.tsv`](results/performance_metrics.tsv)
 
 | | Predicted + | Predicted - |
 | :--- | :--- | :--- |
 | **Actual +** | TP = 357 | FN = 5 |
 | **Actual -** | FP = 0 | TN = 362 |
 
-Full metrics → [` performance_metrics.tsv`](results/performance_metrics.tsv)
 
-| Metric | Value |
-| :--- | :--- |
-| Sensitivity | 0.9862 |
-| Specificity | 1.0000 |
-| Precision | 1.0000 |
-| F1 | 0.9930 |
-| MCC | 0.9863 |
-
-
-
-**2-Fold Cross-Validation (E-value ≤ 1e-3)**
+**HMM —2-Fold Cross-Validation (E-value ≤ 1e-3)**
 
 | | Fold 1 | Fold 2 |
 | :--- | :--- | :--- |
@@ -210,15 +198,66 @@ Full metrics → [` performance_metrics.tsv`](results/performance_metrics.tsv)
 
 <img width="400" height="400" alt="roc_curve" src="https://github.com/user-attachments/assets/53e98e3a-da13-47f4-9e59-2046dc944920" />
 
----
+**BLAST — E-value Threshold Analysis**
+
+Full results in [`blast_evalue_analysis.tsv`](results/blast/blast_evalue_analysis.tsv).
+
+| E-value | TP | FN | FP | TN | Sens | Spec | Prec | F1 | MCC |
+|--------|----|----|----|----|------|------|------|------|------|
+| 1e-50 | 39 | 311 | 0 | 350 | 0.1114 | 1.0000 | 1.0000 | 0.2005 | 0.2429 |
+| 1e-30 | 49 | 301 | 0 | 350 | 0.1400 | 1.0000 | 1.0000 | 0.2456 | 0.2744 |
+| 1e-20 | 62 | 288 | 0 | 350 | 0.1771 | 1.0000 | 1.0000 | 0.3010 | 0.3117 |
+| 1e-10 | 339 | 11 | 1 | 349 | 0.9686 | 0.9971 | 0.9971 | 0.9826 | 0.9661 |
+| 1e-05 | 346 | 4 | 1 | 349 | 0.9886 | 0.9971 | 0.9971 | 0.9928 | 0.9858 |
+| **1e-03** | **349** | **1** | **2** | **348** | **0.9971** | **0.9943** | **0.9943** | **0.9957** | **0.9914** |
+| 1e-02 | 349 | 1 | 3 | 347 | 0.9971 | 0.9914 | 0.9915 | 0.9943 | 0.9886 |
+| 0.1 | 350 | 0 | 30 | 320 | 1.0000 | 0.9143 | 0.9211 | 0.9589 | 0.9177 |
+| 1.0 | 350 | 0 | 155 | 195 | 1.0000 | 0.5571 | 0.6931 | 0.8187 | 0.6214 |
+
+MCC reaches a stable plateau from 1e-5 onwards. Optimal threshold: **E-value ≤ 1e-3.**
+
+**BLAST — Overall Validation (E-value ≤ 1e-3)**
+
+Full confusion matrix → [`blast_confusion_matrix.tsv`](results/blast/blast_confusion_matrix.tsv).
+Full metrics → [`blast_performance.tsv`](results/blast/blast_performance.tsv).
+
+|              | Predicted + | Predicted − |
+|--------------|-------------|-------------|
+| **Actual +** | TP = 349    | FN = 1      |
+| **Actual −** | FP = 2      | TN = 348    |
+
+**HMM vs BLAST — Comparison**
+
+| Metric | HMM | BLAST |
+|--------|------|------|
+| Sensitivity | 0.9862 | **0.9971** |
+| Specificity | **1.0000** | 0.9943 |
+| Precision | **1.0000** | 0.9943 |
+| F1 | 0.9930 | **0.9957** |
+| MCC | 0.9863 | **0.9914** |
+| False Positives | **0** | 2 |
+| False Negatives | 5 | **1** |
+
+
+**Key observations:**
+
+BLAST achieves **higher sensitivity** (0.9971 vs 0.9862) — misses only 1 Kunitz protein
+HMM achieves **perfect specificity** (1.0000 vs 0.9943) — zero false positives
+Both methods perform excellently with MCC > 0.98
+HMM is more suitable when precision is critical; BLAST when recall is critical
+
+
 
 **False Negatives**
 
-5 Kunitz-domain proteins were not detected at the optimal threshold. All correspond to highly divergent sequences with low similarity to the training set, likely representing evolutionary outliers of the Kunitz fold.
+**HMM** — 5 proteins not detected: highly divergent sequences with low similarity to the training set, likely evolutionary outliers of the Kunitz fold.
 
-**Swiss-Prot Full Scan**
+**BLAST** — 1 protein not detected: insufficient sequence similarity to any human Kunitz reference.
 
-Full results →  [` swissprot_hits.tsv`](results/swissprot_hits.tsv)
+
+**Swiss-Prot Full Scan (HMM)**
+
+Full results →  [` swissprot_hits.tsv`](results/hmm/swissprot_hits.tsv)
 
 Scanning all **565,361 Swiss-Prot sequences** at E-value ≤ 1e-3:
 
@@ -242,6 +281,7 @@ The trained model's position conservation visualized across 102 nodes:
 | Tool | Version | Purpose | Install |
 | :--- | :--- | :--- | :--- |
 | **HMMER** | $\ge$ 3.3 | Build & search HMM profiles | `conda install -c bioconda hmmer` |
+| **BLAST+** | $\ge$ 2.12 | BLAST-based prediction | `conda install -c bioconda blast` |
 | **PDBe-fold** | web | Structural alignment | [ebi.ac.uk/msd-srv/ssm/](https://www.ebi.ac.uk/msd-srv/ssm/) |
 
 ## Data Sources
@@ -262,4 +302,7 @@ Contact: [kimia.kanouni@studio.unibo.it]
 
 Prof. Emidio Capriotti — http://biofold.org/
 
+## License
+This project is licensed under the MIT License — see [`LICENSE`](LICENSE) for details.
+Data from PDB, UniProt, and PFAM are subject to their respective terms of use.
 
