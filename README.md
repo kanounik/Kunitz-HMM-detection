@@ -46,23 +46,26 @@ kunitz-hmm-profile/
 │   └── kunitz.hmm                      # Trained HMM profile (102 nodes)
 │
 ├── results/
-│   ├── — HMM results —
-│   ├── positives_ids.tsv               # Accessions + lengths of 362 positive sequences
-│   ├── negatives_ids.tsv               # Accessions + lengths of 362 sampled negatives
-│   ├── hits_pos.tsv                    # hmmsearch results on positive test set
-│   ├── hits_neg.tsv                    # hmmsearch results on negative test set
-│   ├── confusion_matrix.tsv            # TP=357, FP=0, TN=362, FN=5
-│   ├── performance_metrics.tsv         # Sensitivity, Specificity, Precision, F1, MCC
-│   ├── evalue_analysis.tsv             # HMM metrics across 9 E-value thresholds
-│   ├── swissprot_hits.tsv              # 379 Kunitz hits across full Swiss-Prot
-│   ├── — BLAST results —
-│   ├── blast_positives_ids.tsv         # Accessions of 350 positive sequences (BLAST)
-│   ├── blast_negatives_ids.tsv         # Accessions of 350 negative sequences (BLAST)
-│   ├── blast_pos.tsv                   # BLAST results on positive test set
-│   ├── blast_neg.tsv                   # BLAST results on negative test set
-│   ├── blast_confusion_matrix.tsv      # TP=349, FP=2, TN=348, FN=1
-│   ├── blast_performance.tsv           # BLAST metrics at optimal threshold
-│   ├── blast_evalue_analysis.tsv       # BLAST metrics across 9 E-value thresholds
+│   │
+│   ├── hmm/
+│   │   ├── positives_ids.tsv           # Accessions + lengths of 362 positive sequences
+│   │   ├── negatives_ids.tsv           # Accessions + lengths of 362 sampled negatives
+│   │   ├── hits_pos.tsv                # hmmsearch results on positive test set
+│   │   ├── hits_neg.tsv                # hmmsearch results on negative test set
+│   │   ├── confusion_matrix.tsv        # TP=357, FP=0, TN=362, FN=5
+│   │   ├── performance_metrics.tsv     # Sensitivity, Specificity, Precision, F1, MCC
+│   │   ├── evalue_analysis.tsv         # HMM metrics across 9 E-value thresholds
+│   │   └── swissprot_hits.tsv          # 379 Kunitz hits across full Swiss-Prot
+│   │
+│   ├── blast/
+│   │   ├── blast_positives_ids.tsv     # Accessions of 350 positive sequences
+│   │   ├── blast_negatives_ids.tsv     # Accessions of 350 negative sequences
+│   │   ├── blast_pos.tsv               # BLAST results on positive test set
+│   │   ├── blast_neg.tsv               # BLAST results on negative test set
+│   │   ├── blast_confusion_matrix.tsv  # TP=349, FP=2, TN=348, FN=1
+│   │   ├── blast_performance.tsv       # BLAST metrics at optimal threshold
+│   │   └── blast_evalue_analysis.tsv   # BLAST metrics across 9 E-value thresholds
+│   │
 │   └── figures/
 │       ├── confusion_matrices.png      # 2-fold cross-validation confusion matrices
 │       ├── roc_curve.png               # ROC curve (AUC = 0.9945, both folds)
