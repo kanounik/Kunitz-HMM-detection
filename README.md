@@ -91,9 +91,9 @@ kunitz-hmm-profile/
 ## Methods
 **1. Structure & Sequence Collection**
 
-26 PDB structures containing Kunitz domains were downloaded using [`download_pdb.py`](scripts/download_pdb.py), starting from the canonical BPTI structure ([`3TGI.pdb`](data/3TGI.pdb), chain I). Kunitz chains were extracted with [`extract_chains.py`](scripts/extract_chains.py). Sequences with a PF00014 annotation were additionally retrieved from UniProt to enrich the training set, stored in [`kunitz_all.fasta`](data/kunitz_all.fasta).
+26 PDB structures containing Kunitz domains were downloaded using [`download_pdb.py`](scripts/download_pdb.py), starting from the canonical BPTI structure ([`3TGI.pdb`](data/3TGI.pdb), chain I). Kunitz chains were extracted with [`extract_chains.py`](scripts/extract_chains.py). Sequences with a PF00014 annotation were additionally retrieved from UniProt to enrich the training set, stored in [`kunitz_all.fasta`](data/kunitz_all.fasta) (398 sequences, including 18 human proteins.
 
-**2. Multiple Sequence Alignment**
+**2. Structural Alignment**
 
 The selected Kunitz domain structures were structurally aligned using **PDBe-fold**. The resulting alignment was saved as [`kunitz_aligned.fasta`](data/kunitz_aligned.fasta) and used directly as input for HMMER.
 
@@ -105,14 +105,18 @@ hmmbuild kunitz.hmm kunitz_aligned.fasta
 ```
 A ***consistency test*** confirmed all **26/26** training sequences are recovered by the model.
 
-**4. Validation Dataset**
+**4.  BLAST Reference Database**
+
+18 human Kunitz proteins from [`kunitz_all.fasta`](data/kunitz_all.fasta) were extracted to build [`human_kunitz_db.fasta`](data/human_kunitz_db.fasta), used as the BLAST reference database. A sequence is predicted positive if it produces a hit below the E-value threshold.
+
+**5. Validation Dataset**
 
 The validation set was extracted from **Swiss-Prot** (reviewed, manually curated entries only, fragments excluded). Sequence accessions are available in [`positives.tsv`](results/positives.tsv) and [`negatives.tsv`](results/negatives.tsv) for full reproducibility.
 
 - Positive set — 368 proteins with an annotated PF00014 domain in UniProt, To prevent data leakage, 6 human proteins present in the training set were excluded, leaving 362
 - Negative set — 362 proteins randomly sampled (random seed = 42) from 564,993 non-Kunitz Swiss-Prot sequences,  balanced to match the positive set.
 
-**5. Performance Evaluation**
+**6. Performance Evaluation**
 
 [`validate_hmm.py`](scripts/validate_hmm.py) ran hmmsearch on both sets and saved the results to [`hits_pos.tsv`](results/hits_pos.tsv) and [`hits_neg.tsv`](results/hits_neg.tsv). Metrics were computed across 9 E-value thresholds via [`evalue_analysis.py`](scripts/evalue_analysis.py) and saved to [`evalue_analysis.tsv`](results/evalue_analysis.tsv). 2-fold cross-validation was performed with cross_validation.py and ROC curves generated with [`roc_curve.py`](scripts/roc_curve.py).
 
@@ -125,7 +129,7 @@ The validation set was extracted from **Swiss-Prot** (reviewed, manually curated
 | **MCC** | $MCC = \frac{(TP \times TN) - (FP \times FN)}{\sqrt{(TP+FP)(TP+FN)(TN+FP)(TN+FN)}}$ |
 
 
-**6. Swiss-Prot Full Scan**
+**7. Swiss-Prot Full Scan**
 
 All 565,361 Swiss-Prot sequences were scanned using [`swissprot.py`](scripts/swissprot.py). Results were saved directly to [`swissprot_hits.tsv`](results/swissprot_hits.tsv) with no intermediate files produced.
 
