@@ -34,40 +34,50 @@ The **Kunitz domain** is a short (~58 residues), disulfide-rich alpha+beta fold 
 kunitz-hmm-profile/
 │
 ├── data/
-│   ├── pdb_files/                    # 26 downloaded PDB structures
-│   ├── kunitz_chains/                # Extracted Kunitz domain chains
-│   ├── 3TGI.pdb                      # Canonical BPTI reference structure
-│   ├── kunitz_with_pdb.fasta         # Kunitz sequences with PDB structures
-│   ├── kunitz_all.fasta              # All collected Kunitz sequences
-│   ├── kunitz_sequences.fasta        # Filtered sequences used for alignment
-│   └── kunitz_aligned.fasta          # PDBe-fold structural alignment
-│ 
+│   ├── pdb_files/                      # 26 downloaded PDB structures
+│   ├── kunitz_chains/                  # Extracted Kunitz domain chains
+│   ├── 3TGI.pdb                        # Canonical BPTI reference structure
+│   ├── kunitz_with_pdb.fasta           # Kunitz sequences with PDB structures
+│   ├── kunitz_all.fasta                # All collected Kunitz sequences (398)
+│   ├── kunitz_sequences.fasta          # Filtered sequences used for alignment
+│   └── kunitz_aligned.fasta            # PDBe-fold structural alignment
+│
 ├── models/
-│   └── kunitz.hmm                    # Trained HMM profile (102 nodes)
+│   └── kunitz.hmm                      # Trained HMM profile (102 nodes)
 │
 ├── results/
-│   ├── positives_ids.tsv             # Accessions + lengths of 362 positive sequences
-│   ├── negatives_ids.tsv             # Accessions + lengths of 362 sampled negatives
-│   ├── hits_pos.tsv                  # hmmsearch results on positive test set (357/362 hits)
-│   ├── hits_neg.tsv                  # hmmsearch results on negative test set (0 hits)
-│   ├── confusion_matrix.tsv          # TP=357, FP=0, TN=362, FN=5
-│   ├── performance_metrics.tsv       # Sensitivity, Specificity, Precision, F1, MCC
-│   ├── evalue_analysis.tsv           # Full metrics across 9 E-value thresholds
-│   ├── swissprot_hits.tsv            # 379 Kunitz hits across full Swiss-Prot
+│   ├── — HMM results —
+│   ├── positives_ids.tsv               # Accessions + lengths of 362 positive sequences
+│   ├── negatives_ids.tsv               # Accessions + lengths of 362 sampled negatives
+│   ├── hits_pos.tsv                    # hmmsearch results on positive test set
+│   ├── hits_neg.tsv                    # hmmsearch results on negative test set
+│   ├── confusion_matrix.tsv            # TP=357, FP=0, TN=362, FN=5
+│   ├── performance_metrics.tsv         # Sensitivity, Specificity, Precision, F1, MCC
+│   ├── evalue_analysis.tsv             # HMM metrics across 9 E-value thresholds
+│   ├── swissprot_hits.tsv              # 379 Kunitz hits across full Swiss-Prot
+│   ├── — BLAST results —
+│   ├── blast_positives_ids.tsv         # Accessions of 350 positive sequences (BLAST)
+│   ├── blast_negatives_ids.tsv         # Accessions of 350 negative sequences (BLAST)
+│   ├── blast_pos.tsv                   # BLAST results on positive test set
+│   ├── blast_neg.tsv                   # BLAST results on negative test set
+│   ├── blast_confusion_matrix.tsv      # TP=349, FP=2, TN=348, FN=1
+│   ├── blast_performance.tsv           # BLAST metrics at optimal threshold
+│   ├── blast_evalue_analysis.tsv       # BLAST metrics across 9 E-value thresholds
 │   └── figures/
-│       ├── confusion_matrices.png    # 2-fold cross-validation confusion matrices
-│       ├── roc_curve.png             # ROC curve (AUC = 0.995, both folds)
-│       ├── mcc_thresholds.png        # MCC vs E-value threshold
-│       └── hmm_logo.png              # HMM sequence logo (102 positions)
+│       ├── confusion_matrices.png      # 2-fold cross-validation confusion matrices
+│       ├── roc_curve.png               # ROC curve (AUC = 0.9945, both folds)
+│       ├── mcc_thresholds.png          # MCC vs E-value threshold
+│       └── hmm_logo.png                # HMM sequence logo (102 positions)
 │
 ├── scripts/
-│   ├── download_pdb.py               # Download 26 PDB structures
-│   ├── extract_chains.py             # Extract Kunitz chains from PDB files
-│   ├── validate_hmm.py               # hmmsearch + IDs + confusion matrix + metrics → TSV
-│   ├── evalue_analysis.py            # E-value threshold analysis → TSV
-│   ├── cross_validation.py           # 2-fold cross-validation
-│   ├── roc_curve.py                  # ROC curve generation (AUC = 0.995)
-│   └── swissprot.py                  # Scan full Swiss-Prot → TSV
+│   ├── download_pdb.py                 # Download 26 PDB structures
+│   ├── extract_chains.py               # Extract Kunitz chains from PDB files
+│   ├── validate_hmm.py                 # HMM: hmmsearch + confusion matrix → TSV
+│   ├── evalue_analysis.py              # HMM: E-value threshold analysis → TSV
+│   ├── cross_validation.py             # HMM: 2-fold cross-validation
+│   ├── roc_curve.py                    # HMM: ROC curve (AUC = 0.9945)
+│   ├── swissprot.py                    # HMM: Scan full Swiss-Prot → TSV
+│   └── blast.py                        # BLAST: prediction + metrics → TSV
 │
 ├── README.md
 ├── requirements.txt
