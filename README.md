@@ -40,7 +40,8 @@ kunitz-hmm-profile/
 │   ├── kunitz_with_pdb.fasta           # Kunitz sequences with PDB structures
 │   ├── kunitz_all.fasta                # All collected Kunitz sequences (398)
 │   ├── kunitz_sequences.fasta          # Filtered sequences used for alignment
-│   └── kunitz_aligned.fasta            # PDBe-fold structural alignment
+│   ├── kunitz_aligned.fasta            # PDBe-fold structural alignment
+│   └── human_kunitz_db.fasta           # 18 human Kunitz sequences (BLAST reference DB)
 │
 ├── models/
 │   └── kunitz.hmm                      # Trained HMM profile (102 nodes)
