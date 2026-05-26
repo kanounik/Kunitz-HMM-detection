@@ -1,0 +1,532 @@
+target_name	accession	e_value	score	description
+sp|Q868Z9|PPN_DROME	-	1.3e-80	271.2	Papilin OS=Drosophila melanogaster OX=7227 GN=Ppn PE=1 SV=2
+sp|O76840|PPN1_CAEEL	-	1.5e-67	229.3	Papilin OS=Caenorhabditis elegans OX=6239 GN=mig-6 PE=1 SV=1
+sp|A0A6P8HC43|ATPI1_ACTTE	-	8.1e-54	185.2	Actinia tenebrosa protease inhibitors OS=Actinia tenebrosa OX=6105 PE=1 SV=1
+sp|Q02445|TFPI1_RAT	-	4.9e-44	153.7	Tissue factor pathway inhibitor OS=Rattus norvegicus OX=10116 GN=Tfpi PE=2 SV=1
+sp|Q28864|TFPI1_MACMU	-	1.2e-42	149.3	Tissue factor pathway inhibitor OS=Macaca mulatta OX=9544 GN=TFPI PE=2 SV=1
+sp|P10646|TFPI1_HUMAN	-	2.6e-40	141.8	Tissue factor pathway inhibitor OS=Homo sapiens OX=9606 GN=TFPI PE=1 SV=1
+sp|O54819|TFPI1_MOUSE	-	5.4e-40	140.8	Tissue factor pathway inhibitor OS=Mus musculus OX=10090 GN=Tfpi PE=2 SV=1
+sp|P19761|TFPI1_RABIT	-	8.3e-37	130.5	Tissue factor pathway inhibitor OS=Oryctolagus cuniculus OX=9986 GN=TFPI PE=2 SV=2
+sp|Q5IS80|A4_PANTR	-	2.9e-33	119.2	Amyloid-beta precursor protein OS=Pan troglodytes OX=9598 GN=APP PE=2 SV=1
+sp|P79307|A4_PIG	-	3.2e-33	119.0	Amyloid-beta precursor protein OS=Sus scrofa OX=9823 GN=APP PE=2 SV=2
+sp|P08592|A4_RAT	-	3.2e-33	119.0	Amyloid-beta precursor protein OS=Rattus norvegicus OX=10116 GN=App PE=1 SV=2
+sp|P53601|A4_MACFA	-	4.2e-33	118.7	Amyloid-beta precursor protein OS=Macaca fascicularis OX=9541 GN=APP PE=2 SV=3
+sp|P05067|A4_HUMAN	-	5.8e-33	118.2	Amyloid-beta precursor protein OS=Homo sapiens OX=9606 GN=APP PE=1 SV=3
+sp|Q60495|A4_CAVPO	-	6.9e-33	118.0	Amyloid-beta precursor protein OS=Cavia porcellus OX=10141 GN=APP PE=1 SV=2
+sp|P12023|A4_MOUSE	-	1.5e-32	116.9	Amyloid-beta precursor protein OS=Mus musculus OX=10090 GN=App PE=1 SV=3
+sp|Q95241|A4_SAISC	-	1.6e-32	116.8	Amyloid-beta precursor protein OS=Saimiri sciureus OX=9521 GN=APP PE=2 SV=1
+sp|P84875|PCPI_SABMA	-	2.9e-30	109.5	Carboxypeptidase inhibitor SmCI OS=Sabellastarte magnifica OX=389514 PE=1 SV=1
+sp|Q7YRQ8|TFPI2_BOVIN	-	1.2e-28	104.3	Tissue factor pathway inhibitor 2 OS=Bos taurus OX=9913 GN=TFPI2 PE=2 SV=1
+sp|O93279|A4_TAKRU	-	6.4e-27	98.8	Amyloid-beta A4 protein OS=Takifugu rubripes OX=31033 GN=app PE=3 SV=1
+sp|O43291|SPIT2_HUMAN	-	1.7e-26	97.4	Kunitz-type protease inhibitor 2 OS=Homo sapiens OX=9606 GN=SPINT2 PE=1 SV=2
+sp|O73683|A4_DICFU	-	7.4e-26	95.4	Amyloid-beta A4 protein OS=Dichotomyctere fluviatilis OX=2593188 GN=app PE=2 SV=1
+sp|B6ZIW0|KUN_HAELO	-	8.5e-25	92.0	Thrombin inhibitor hemalin OS=Haemaphysalis longicornis OX=44386 PE=2 SV=1
+sp|W4VSH9|VKT1_TRILK	-	1.1e-24	91.7	Kunitz-type U19-barytoxin-Tl1a OS=Trittame loki OX=1295018 PE=2 SV=2
+sp|O35536|TFPI2_MOUSE	-	1.5e-24	91.2	Tissue factor pathway inhibitor 2 OS=Mus musculus OX=10090 GN=Tfpi2 PE=2 SV=1
+sp|Q8WPI3|KUNIG_RHIMP	-	1.5e-23	87.9	Boophilin-G2 OS=Rhipicephalus microplus OX=6941 PE=1 SV=1
+sp|Q8WPI2|KUNIH_RHIMP	-	1.7e-23	87.8	Boophilin-H2 OS=Rhipicephalus microplus OX=6941 PE=1 SV=1
+sp|C0HMC7|KUN_HAEDO	-	8.1e-23	85.6	Doenitin-1 OS=Haemaphysalis doenitzi OX=1048531 PE=2 SV=1
+sp|P48307|TFPI2_HUMAN	-	2e-22	84.4	Tissue factor pathway inhibitor 2 OS=Homo sapiens OX=9606 GN=TFPI2 PE=1 SV=1
+sp|Q9WU03|SPIT2_MOUSE	-	2.1e-22	84.3	Kunitz-type protease inhibitor 2 OS=Mus musculus OX=10090 GN=Spint2 PE=1 SV=1
+sp|B2BS84|VKT_AUSLA	-	4.5e-21	80.0	Putative Kunitz-type serine protease inhibitor OS=Austrelaps labialis OX=471292 PE=2 SV=1
+sp|Q9R097|SPIT1_MOUSE	-	4.3e-20	76.9	Kunitz-type protease inhibitor 1 OS=Mus musculus OX=10090 GN=Spint1 PE=1 SV=2
+sp|P00974|BPT1_BOVIN	-	2e-19	74.7	Pancreatic trypsin inhibitor OS=Bos taurus OX=9913 PE=1 SV=2
+sp|Q5VJG2|KUNI_AMBHE	-	3e-19	74.1	Amblin OS=Amblyomma hebraeum OX=34608 PE=1 SV=1
+sp|O43278|SPIT1_HUMAN	-	4e-19	73.8	Kunitz-type protease inhibitor 1 OS=Homo sapiens OX=9606 GN=SPINT1 PE=1 SV=2
+sp|P00980|VKTHA_DENAN	-	4e-19	73.7	Kunitz-type serine protease inhibitor homolog alpha-dendrotoxin OS=Dendroaspis angusticeps OX=8618 PE=1 SV=1
+sp|P00979|VKTH1_DENPO	-	5.3e-19	73.4	Kunitz-type serine protease inhibitor homolog dendrotoxin I OS=Dendroaspis polylepis polylepis OX=8620 PE=1 SV=2
+sp|P04815|BPT2_BOVIN	-	1.8e-17	68.5	Spleen trypsin inhibitor I OS=Bos taurus OX=9913 PE=1 SV=2
+sp|P00975|IBPS_BOVIN	-	2.4e-17	68.0	Serum basic protease inhibitor OS=Bos taurus OX=9913 PE=1 SV=1
+sp|P00978|AMBP_BOVIN	-	5.1e-17	67.0	Protein AMBP OS=Bos taurus OX=9913 GN=AMBP PE=1 SV=2
+sp|P02760|AMBP_HUMAN	-	5.6e-17	66.9	Protein AMBP OS=Homo sapiens OX=9606 GN=AMBP PE=1 SV=1
+sp|Q60559|AMBP_MESAU	-	5.6e-17	66.9	Protein AMBP OS=Mesocricetus auratus OX=10036 GN=AMBP PE=1 SV=1
+sp|Q06481|APLP2_HUMAN	-	1.1e-15	62.7	Amyloid beta precursor like protein 2 OS=Homo sapiens OX=9606 GN=APLP2 PE=1 SV=2
+sp|Q62577|AMBP_MERUN	-	1.8e-15	62.0	Protein AMBP OS=Meriones unguiculatus OX=10047 GN=AMBP PE=2 SV=1
+sp|Q07456|AMBP_MOUSE	-	1.1e-14	59.5	Protein AMBP OS=Mus musculus OX=10090 GN=Ambp PE=1 SV=2
+sp|P15943|APLP2_RAT	-	1.2e-14	59.4	Amyloid beta precursor like protein 2 OS=Rattus norvegicus OX=10116 GN=Aplp2 PE=1 SV=2
+sp|P0DMJ6|VKT12_DENAN	-	1.8e-14	58.8	Kunitz-type serine protease inhibitor dendrotoxin DaE1 OS=Dendroaspis angusticeps OX=8618 PE=1 SV=1
+sp|Q7LZS8|VKTRE_DENAN	-	1.8e-14	58.8	Kunitz-type serine protease inhibitor long epsilon-dendrotoxin Arg55 OS=Dendroaspis angusticeps OX=8618 PE=1 SV=1
+sp|O62845|ELAC_NOTEU	-	1.9e-14	58.7	Early lactation protein OS=Notamacropus eugenii OX=9315 GN=ELP PE=1 SV=1
+sp|C1IC50|VKT1_WALAE	-	2e-14	58.7	Protease inhibitor 1 OS=Walterinnesia aegyptia OX=64182 PE=1 SV=1
+sp|P00994|ISIK_HELPO	-	2.9e-14	58.2	Isoinhibitor K OS=Helix pomatia OX=6536 PE=1 SV=1
+sp|Q29428|TKDP1_SHEEP	-	4.6e-14	57.5	Trophoblast Kunitz domain protein 1 OS=Ovis aries OX=9940 GN=TKDP1 PE=2 SV=1
+sp|Q6T6S5|VKT2_BITGA	-	4.8e-14	57.4	Kunitz-type serine protease inhibitor bitisilin-2 OS=Bitis gabonica OX=8694 PE=1 SV=1
+sp|C0HLB2|VKT_PSEPC	-	5e-14	57.4	Kunitz-type serine protease inhibitor PPTI OS=Pseudocerastes persicus OX=47769 PE=1 SV=1
+sp|Q90W98|VKT4_PSETT	-	5.1e-14	57.4	Kunitz-type serine protease inhibitor textilinin-4 OS=Pseudonaja textilis textilis OX=169397 PE=2 SV=1
+sp|Q08E66|WFKN2_BOVIN	-	5.2e-14	57.3	WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 2 OS=Bos taurus OX=9913 GN=WFIKKN2 PE=2 SV=1
+sp|C0HLA5|MAMB2_DENVI	-	5.5e-14	57.3	Mambaquaretin-2 OS=Dendroaspis viridis OX=8621 PE=1 SV=1
+sp|P00991|VKT1_VIPAA	-	5.8e-14	57.2	Kunitz-type serine protease inhibitor 1 OS=Vipera ammodytes ammodytes OX=8705 PE=1 SV=2
+sp|B5L5M7|IVBI_AUSSU	-	6.3e-14	57.1	Kunitz/BPTI-like toxin OS=Austrelaps superbus OX=29156 PE=3 SV=1
+sp|C0HLA7|MAMB4_DENVI	-	6.5e-14	57.0	Mambaquaretin-4 OS=Dendroaspis viridis OX=8621 PE=1 SV=1
+sp|P00984|VKTE_DENPO	-	7.6e-14	56.8	Kunitz-type serine protease inhibitor dendrotoxin E OS=Dendroaspis polylepis polylepis OX=8620 PE=1 SV=1
+sp|Q7LZE3|VKTHE_DENAN	-	7.6e-14	56.8	Kunitz-type serine protease inhibitor long epsilon-dendrotoxin His55 OS=Dendroaspis angusticeps OX=8618 PE=1 SV=2
+sp|Q64240|AMBP_RAT	-	8.2e-14	56.7	Protein AMBP OS=Rattus norvegicus OX=10116 GN=Ambp PE=1 SV=1
+sp|Q29100|UPTI_PIG	-	8.3e-14	56.7	Uterine plasmin/trypsin inhibitor OS=Sus scrofa OX=9823 PE=1 SV=1
+sp|B7S4N9|VKT_OXYSC	-	8.3e-14	56.7	Kunitz-type serine protease inhibitor taicotoxin OS=Oxyuranus scutellatus scutellatus OX=8667 PE=1 SV=1
+sp|C0HLA8|MAMB5_DENJA	-	1e-13	56.4	Mambaquaretin-5 OS=Dendroaspis jamesoni kaimosae OX=8619 PE=1 SV=1
+sp|C0HLA6|MAMB3_DENPO	-	1e-13	56.4	Mambaquaretin-3 OS=Dendroaspis polylepis polylepis OX=8620 PE=1 SV=1
+sp|P0DKL8|VKT_VIPRE	-	1.1e-13	56.3	Kunitz-type serine protease inhibitor Vur-KIn OS=Vipera renardi OX=927686 PE=1 SV=1
+sp|Q28201|TKDP1_BOVIN	-	1.1e-13	56.3	Trophoblast Kunitz domain protein 1 OS=Bos taurus OX=9913 GN=TKDP1 PE=2 SV=2
+sp|P00993|IBP_CARCR	-	1.3e-13	56.0	Chelonianin OS=Caretta caretta OX=8467 PE=1 SV=1
+sp|I2G9B4|VKT_MACLN	-	1.7e-13	55.7	Kunitz-type serine protease inhibitor PIVL OS=Macrovipera lebetina transmediterranea OX=384075 PE=1 SV=1
+sp|P10280|VKT52_ANESU	-	1.9e-13	55.5	KappaPI-actitoxin-Avd3a OS=Anemonia sulcata OX=6108 PE=1 SV=2
+sp|P0DV05|VKT2O_RADCR	-	2.6e-13	55.1	PI-stichotoxin-Hcr2o OS=Radianthus crispa OX=3122430 PE=3 SV=1
+sp|A0A1D0BND9|TD1A_HADIN	-	2.8e-13	55.0	U13-hexatoxin-Hi1a OS=Hadronyche infensa OX=153481 PE=2 SV=1
+sp|P24541|VKT_ERIMA	-	3.3e-13	54.8	Kunitz-type serine protease inhibitor OS=Eristicophis macmahoni OX=110227 PE=1 SV=1
+sp|C0HJU7|VKT2G_RADCR	-	3.4e-13	54.7	PI-stichotoxin-Hcr2g OS=Radianthus crispa OX=3122430 PE=1 SV=1
+sp|C0HK72|3API_HETMG	-	3.4e-13	54.7	PI-stichotoxin-Hmg3a OS=Heteractis magnifica OX=38281 PE=1 SV=1
+sp|Q29143|ELAC_TRIVU	-	3.4e-13	54.7	Early lactation protein OS=Trichosurus vulpecula OX=9337 GN=ELP PE=1 SV=1
+sp|P0DMW7|VKT3B_ACTEQ	-	3.5e-13	54.7	PI-actitoxin-Aeq3b OS=Actinia equina OX=6106 PE=1 SV=1
+sp|P0DN08|VKT53_ANEVI	-	3.6e-13	54.6	KappaPI-actitoxin-Avd3e OS=Anemonia viridis OX=51769 PE=3 SV=1
+sp|Q2ES47|VKT4_DABRR	-	3.7e-13	54.6	Kunitz-type serine protease inhibitor 4 OS=Daboia russelii OX=8707 PE=2 SV=1
+sp|P0DN09|VKT5_ANEVI	-	3.9e-13	54.5	U-actitoxin-Avd3h OS=Anemonia viridis OX=51769 PE=3 SV=1
+sp|C1IC52|VKT2_WALAE	-	4e-13	54.5	Kunitz-type serine protease inhibitor spermatin OS=Walterinnesia aegyptia OX=64182 PE=1 SV=1
+sp|P0DMW6|VKT3A_ACTEQ	-	4.9e-13	54.2	PI-actitoxin-Aeq3a OS=Actinia equina OX=6106 PE=1 SV=1
+sp|Q6T6T5|VKT1_BITGA	-	5.1e-13	54.2	Kunitz-type serine protease inhibitor bitisilin-1 OS=Bitis gabonica OX=8694 PE=1 SV=1
+sp|A0A1Z0YU59|MAMB1_DENAN	-	6.1e-13	53.9	Mambaquaretin-1 OS=Dendroaspis angusticeps OX=8618 PE=1 SV=2
+sp|P00986|VKT2_NAJNI	-	6.5e-13	53.8	Kunitz-type serine protease inhibitor 2 OS=Naja nivea OX=8655 PE=1 SV=1
+sp|P0DJ47|VKT12_OLIMR	-	6.5e-13	53.8	Kunitz-type serine protease inhibitor BmKTT-3 OS=Olivierus martensii OX=34649 PE=3 SV=1
+sp|Q90W99|VKT3_PSETT	-	6.8e-13	53.8	Kunitz-type serine protease inhibitor textilinin-3 OS=Pseudonaja textilis textilis OX=169397 PE=2 SV=1
+sp|E5AJX3|VKT_VIPNI	-	6.8e-13	53.8	Kunitz-type serine protease inhibitor ki-VN OS=Vipera nikolskii OX=1808362 PE=2 SV=1
+sp|C0HLA9|MAMB6_DENVI	-	6.9e-13	53.7	Mambaquaretin-6 OS=Dendroaspis viridis OX=8621 PE=1 SV=1
+sp|A8Y7N9|VKTC6_DABSI	-	7.2e-13	53.7	Kunitz-type serine protease inhibitor C6 OS=Daboia siamensis OX=343250 PE=2 SV=1
+sp|P49223|SPIT3_HUMAN	-	1e-12	53.2	Kunitz-type protease inhibitor 3 OS=Homo sapiens OX=9606 GN=SPINT3 PE=1 SV=3
+sp|Q8AY43|VKTA_BUNCA	-	1.1e-12	53.1	Kunitz-type serine protease inhibitor A OS=Bungarus candidus OX=92438 PE=2 SV=2
+sp|C1IC51|VKT3_WALAE	-	1.1e-12	53.0	Protease inhibitor 3 OS=Walterinnesia aegyptia OX=64182 PE=3 SV=1
+sp|Q2ES46|VKT5_DABRR	-	1.3e-12	52.8	Kunitz-type serine protease inhibitor 5 OS=Daboia russelii OX=8707 PE=2 SV=1
+sp|P0C8W3|VKT11_HOFGE	-	1.4e-12	52.8	Kunitz-type serine protease inhibitor Hg1 OS=Hoffmannihadrurus gertschi OX=380989 PE=1 SV=1
+sp|B6RLX2|VKTCT_OPHHA	-	1.6e-12	52.5	Kunitz-type serine protease inhibitor TCI OS=Ophiophagus hannah OX=8665 PE=1 SV=1
+sp|P00985|VKT2_HEMHA	-	1.7e-12	52.5	Kunitz-type serine protease inhibitor 2 OS=Hemachatus haemachatus OX=8626 PE=1 SV=1
+sp|P00976|IBPC_BOVIN	-	1.9e-12	52.4	Colostrum trypsin inhibitor OS=Bos taurus OX=9913 PE=1 SV=2
+sp|P0DMJ4|VKTI3_ANTFU	-	1.9e-12	52.3	PI-actitoxin-Afv2b OS=Anthopleura fuscoviridis OX=6111 PE=1 SV=1
+sp|Q6NUX0|WFKN_DANRE	-	1.9e-12	52.3	WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein OS=Danio rerio OX=7955 GN=wfikkn PE=2 SV=1
+sp|P0DN07|VKT4_ANEVI	-	2e-12	52.3	U-actitoxin-Avd3g OS=Anemonia viridis OX=51769 PE=3 SV=1
+sp|P00992|VKT3_VIPAA	-	2.1e-12	52.2	Kunitz-type serine protease inhibitor 3 OS=Vipera ammodytes ammodytes OX=8705 PE=1 SV=2
+sp|C1IC53|VKT4_WALAE	-	2.3e-12	52.0	Protease inhibitor 4 OS=Walterinnesia aegyptia OX=64182 PE=1 SV=1
+sp|P00982|VKTHD_DENAN	-	2.6e-12	51.9	Kunitz-type serine protease inhibitor homolog delta-dendrotoxin OS=Dendroaspis angusticeps OX=8618 PE=1 SV=1
+sp|P0DN11|VKT7_ANEVI	-	2.6e-12	51.9	U-actitoxin-Avd3j OS=Anemonia viridis OX=51769 PE=3 SV=1
+sp|P0DMX0|VKT3_ANTAF	-	2.7e-12	51.8	PI-actitoxin-Axm2b OS=Anthopleura aff. xanthogrammica OX=152178 PE=1 SV=1
+sp|P86862|VKT1_ANTEL	-	2.8e-12	51.8	KappaPI-actitoxin-Ael3a OS=Anthopleura elegantissima OX=6110 PE=1 SV=1
+sp|F8J2F5|VKT87_DRYCN	-	2.8e-12	51.8	Kunitz-type serine protease inhibitor 87 OS=Drysdalia coronoides OX=66186 PE=1 SV=1
+sp|B4ESA4|VKT3L_BUNMU	-	3.2e-12	51.6	Kunitz-type serine protease inhibitor PILP-3 OS=Bungarus multicinctus OX=8616 PE=3 SV=1
+sp|P81547|VKT1_ANTAF	-	3.4e-12	51.5	PI-actitoxin-Axm2a OS=Anthopleura aff. xanthogrammica OX=152178 PE=1 SV=1
+sp|P20229|VKTTI_NAJNA	-	3.4e-12	51.5	Kunitz-type serine protease inhibitor OS=Naja naja OX=35670 PE=1 SV=1
+sp|B4ESA3|VKT2L_BUNMU	-	4.6e-12	51.1	Kunitz-type serine protease inhibitor PILP-2 OS=Bungarus multicinctus OX=8616 PE=3 SV=1
+sp|P0DN17|VKTD_ANEVI	-	4.7e-12	51.0	U-actitoxin-Avd3p OS=Anemonia viridis OX=51769 PE=3 SV=1
+sp|P0DQR1|VKT3_PALCA	-	4.9e-12	51.0	Kunitz-like toxin PcKuz3 OS=Palythoa caribaeorum OX=134933 PE=3 SV=1
+sp|Q8AY42|VKTB_BUNCA	-	4.9e-12	51.0	Kunitz-type serine protease inhibitor B OS=Bungarus candidus OX=92438 PE=2 SV=2
+sp|F8J2F3|VKT28_DRYCN	-	5.4e-12	50.9	Kunitz-type serine protease inhibitor 28 OS=Drysdalia coronoides OX=66186 PE=1 SV=1
+sp|B5KF95|VKT1_CRYNI	-	5.7e-12	50.8	Kunitz-type serine protease inhibitor nigrescinin-1 OS=Cryptophis nigrescens OX=292442 PE=2 SV=1
+sp|B5KL36|VKT5_CRYNI	-	5.8e-12	50.8	Kunitz-type serine protease inhibitor nigrescinin-5 OS=Cryptophis nigrescens OX=292442 PE=2 SV=1
+sp|A5X2X1|VKT_SISCA	-	6.4e-12	50.6	Fused toxin protein OS=Sistrurus catenatus edwardsii OX=8762 PE=2 SV=1
+sp|Q8T3S7|VKT1_ARAVE	-	6.6e-12	50.6	Kunitz-type U1-aranetoxin-Av1a OS=Araneus ventricosus OX=182803 PE=1 SV=2
+sp|P0DN10|VKT6_ANEVI	-	8.5e-12	50.2	U-actitoxin-Avd3i OS=Anemonia viridis OX=51769 PE=3 SV=1
+sp|P0DJ50|VKT31_OLIMR	-	9.1e-12	50.1	Kunitz-type serine protease inhibitor BmKTT-2 OS=Olivierus martensii OX=34649 PE=1 SV=2
+sp|C0HK73|3BPI_HETMG	-	9.2e-12	50.1	PI-stichotoxin-Hmg3b OS=Heteractis magnifica OX=38281 PE=1 SV=1
+sp|Q90WA1|VKT1_PSETT	-	9.9e-12	50.0	Kunitz-type serine protease inhibitor textilinin-1 OS=Pseudonaja textilis textilis OX=169397 PE=1 SV=1
+sp|P81129|VKT2_STIHL	-	1.1e-11	49.8	PI-stichotoxin-She2b OS=Stichodactyla helianthus OX=6123 PE=1 SV=1
+sp|Q9TWF8|VKT3_ANESU	-	1.1e-11	49.8	KappaPI-actitoxin-Avd3d OS=Anemonia sulcata OX=6108 PE=1 SV=1
+sp|P0DV04|VKT2N_RADCR	-	1.1e-11	49.8	PI-stichotoxin-Hcr2n OS=Radianthus crispa OX=3122430 PE=3 SV=1
+sp|Q964Q0|IXOSP_IXOSC	-	1.3e-11	49.6	Ixolaris OS=Ixodes scapularis OX=6945 PE=1 SV=1
+sp|B5L5R7|VKT2_HOPST	-	1.4e-11	49.6	Kunitz-type serine protease inhibitor stephenin-2 OS=Hoplocephalus stephensii OX=196418 PE=3 SV=1
+sp|B2ZBB6|VKT11_CYRSC	-	1.4e-11	49.6	Kunitz-type kappaPI-theraphotoxin-Hs1b OS=Cyriopagopus schmidti OX=29017 PE=3 SV=1
+sp|Q7TQN3|WFKN2_MOUSE	-	1.4e-11	49.5	WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 2 OS=Mus musculus OX=10090 GN=Wfikkn2 PE=1 SV=2
+sp|Q9TWG0|VKT1_ANESU	-	1.5e-11	49.5	KappaPI-actitoxin-Avd3b OS=Anemonia sulcata OX=6108 PE=1 SV=1
+sp|P0DMJ3|VKTI1_ANTFU	-	1.5e-11	49.4	PI-actitoxin-Afv2a OS=Anthopleura fuscoviridis OX=6111 PE=1 SV=1
+sp|P0DN14|VKTA_ANEVI	-	1.5e-11	49.4	U-actitoxin-Avd3m OS=Anemonia viridis OX=51769 PE=3 SV=1
+sp|P81902|CSTI_BOMMO	-	1.6e-11	49.4	Trypsin inhibitor OS=Bombyx mori OX=7091 PE=1 SV=1
+sp|P0DMJ2|VKT3C_ACTEQ	-	1.6e-11	49.4	PI-actitoxin-Aeq3c OS=Actinia equina OX=6106 PE=1 SV=1
+sp|P68425|VKT1A_CYRSC	-	1.7e-11	49.3	Kunitz-type kappaPI-theraphotoxin-Hs1a OS=Cyriopagopus schmidti OX=29017 PE=1 SV=2
+sp|A8Y7N4|VKTC1_DABSI	-	1.7e-11	49.3	Kunitz-type serine protease inhibitor C1 OS=Daboia siamensis OX=343250 PE=2 SV=1
+sp|H6VC05|VKTK1_DABRR	-	1.7e-11	49.3	Kunitz-type serine protease inhibitor DrKIn-I OS=Daboia russelii OX=8707 PE=1 SV=1
+sp|A7X3V4|VKT1_TELDH	-	1.9e-11	49.1	Kunitz-type serine protease inhibitor kunitoxin-Tel1 OS=Telescopus dhara OX=338837 PE=2 SV=1
+sp|P16044|IBPI_TACTR	-	2e-11	49.1	Proteinase inhibitor OS=Tachypleus tridentatus OX=6853 PE=1 SV=1
+sp|B5KL37|VKT6_CRYNI	-	2e-11	49.0	Kunitz-type serine protease inhibitor nigrescinin-6 OS=Cryptophis nigrescens OX=292442 PE=2 SV=1
+sp|C8YJ94|KUN2_TABYA	-	2e-11	49.0	Tabkunin 2 OS=Tabanus yao OX=485572 PE=1 SV=1
+sp|B5KF96|VKT2_CRYNI	-	2.3e-11	48.8	Kunitz-type serine protease inhibitor nigrescinin-2 OS=Cryptophis nigrescens OX=292442 PE=2 SV=1
+sp|P31713|VKT1_STIHL	-	2.4e-11	48.8	PI-stichotoxin-She2a OS=Stichodactyla helianthus OX=6123 PE=1 SV=1
+sp|A0A6B7FBD3|VKT2I_RADCR	-	2.6e-11	48.7	PI-stichotoxin-Hcr2i OS=Radianthus crispa OX=3122430 GN=iq2c1 PE=1 SV=1
+sp|P0DJ76|VKT4_CYRSC	-	2.8e-11	48.6	Kunitz-type kappaPI-theraphotoxin-Hs1e OS=Cyriopagopus schmidti OX=29017 PE=3 SV=1
+sp|Q9GP15|IRCPI_IXORI	-	2.8e-11	48.5	Kunitz-type anticoagulant protein Ir-CPI OS=Ixodes ricinus OX=34613 GN=CPI PE=2 SV=1
+sp|P0DN18|VKTE_ANEVI	-	2.9e-11	48.5	U-actitoxin-Avd3q OS=Anemonia viridis OX=51769 PE=3 SV=1
+sp|B5L5R0|IVBI4_PSEPO	-	2.9e-11	48.5	Blackelin-4 OS=Pseudechis porphyriacus OX=8671 PE=3 SV=1
+sp|P0DN06|VKT1A_ANEVI	-	3e-11	48.5	U-actitoxin-Avd3f OS=Anemonia viridis OX=51769 PE=3 SV=1
+sp|C0HJU6|VKT2F_RADCR	-	3e-11	48.5	PI-stichotoxin-Hcr2f OS=Radianthus crispa OX=3122430 PE=1 SV=1
+sp|Q8AY41|VKTC_BUNCA	-	3e-11	48.5	Kunitz-type serine protease inhibitor C OS=Bungarus candidus OX=92438 PE=2 SV=2
+sp|P0DN13|VKT9_ANEVI	-	3.1e-11	48.4	U-actitoxin-Avd3l OS=Anemonia viridis OX=51769 PE=3 SV=1
+sp|C0HK74|3CPI_HETMG	-	3.2e-11	48.4	PI-stichotoxin-Hmg3c OS=Heteractis magnifica OX=38281 PE=1 SV=1
+sp|P25660|VKT9_BUNFA	-	3.2e-11	48.4	Kunitz-type serine protease inhibitor IX OS=Bungarus fasciatus OX=8613 PE=1 SV=1
+sp|B5G6G6|VKT2_PSEPO	-	3.6e-11	48.2	Kunitz-type serine protease inhibitor blackelin-2 OS=Pseudechis porphyriacus OX=8671 PE=2 SV=1
+sp|B5KL40|VKT3_AUSSU	-	3.6e-11	48.2	Kunitz-type serine protease inhibitor superbin-3 OS=Austrelaps superbus OX=29156 PE=2 SV=1
+sp|C8YJ95|KUN3_TABYA	-	3.9e-11	48.1	Tabkunin 2 OS=Tabanus yao OX=485572 PE=1 SV=1
+sp|A8Y7N8|VKTC5_DABSI	-	4.1e-11	48.0	Kunitz-type serine protease inhibitor C5 OS=Daboia siamensis OX=343250 PE=2 SV=1
+sp|Q8TEU8|WFKN2_HUMAN	-	4.1e-11	48.0	WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 2 OS=Homo sapiens OX=9606 GN=WFIKKN2 PE=1 SV=1
+sp|Q90WA0|VKT2_PSETT	-	4.3e-11	48.0	Kunitz-type serine protease inhibitor textilinin-2 OS=Pseudonaja textilis textilis OX=169397 PE=1 SV=1
+sp|A8Y7N7|VKTC4_DABSI	-	4.4e-11	47.9	Kunitz-type serine protease inhibitor C4 OS=Daboia siamensis OX=343250 PE=2 SV=1
+sp|B1B5I8|VKT3_STIHA	-	4.6e-11	47.9	KappaPI-stichotoxin-Shd2a OS=Stichodactyla haddoni OX=475174 PE=1 SV=1
+sp|A7X3V7|VKT1_PHIOL	-	4.6e-11	47.9	Kunitz-type serine protease inhibitor kunitoxin-Phi1 OS=Philodryas olfersii OX=120305 PE=2 SV=1
+sp|A6MFL4|VKT4_DEMVE	-	5e-11	47.8	Kunitz-type serine protease inhibitor vestiginin-4 OS=Demansia vestigiata OX=412038 PE=2 SV=1
+sp|P0DMJ5|VKT2E_RADCR	-	5e-11	47.8	PI-stichotoxin-Hcr2e OS=Radianthus crispa OX=3122430 PE=1 SV=1
+sp|A8Y7P3|VKTB3_DABSI	-	5.1e-11	47.7	Kunitz-type serine protease inhibitor B3 OS=Daboia siamensis OX=343250 PE=3 SV=1
+sp|B5KL39|VKT2_AUSSU	-	5.6e-11	47.6	Kunitz-type serine protease inhibitor superbin-2 OS=Austrelaps superbus OX=29156 PE=2 SV=1
+sp|A8Y7N6|VKTC3_DABSI	-	5.7e-11	47.6	Kunitz-type serine protease inhibitor C3 OS=Daboia siamensis OX=343250 PE=2 SV=1
+sp|P00990|VKT2_DABSI	-	5.7e-11	47.6	Kunitz-type serine protease inhibitor 2 OS=Daboia siamensis OX=343250 PE=1 SV=1
+sp|C1IBY4|KUN1_TABYA	-	6.4e-11	47.4	Tabkunin 1 OS=Tabanus yao OX=485572 PE=3 SV=1
+sp|A8Y7P6|VKTB6_DABSI	-	6.4e-11	47.4	Kunitz-type serine protease inhibitor B6 OS=Daboia siamensis OX=343250 PE=2 SV=1
+sp|B5L5R4|IVBI4_NOTSC	-	6.5e-11	47.4	Tigerin-4 OS=Notechis scutatus scutatus OX=70142 PE=3 SV=1
+sp|B5KL35|VKT4_CRYNI	-	6.6e-11	47.4	Kunitz-type serine protease inhibitor nigrescinin-4 OS=Cryptophis nigrescens OX=292442 PE=2 SV=1
+sp|P0DQQ9|VKT1_PALCA	-	7e-11	47.3	Kunitz-like toxin PcKuz1 OS=Palythoa caribaeorum OX=134933 PE=3 SV=1
+sp|Q6ITB9|VKT3_PSEAU	-	7.9e-11	47.1	Kunitz-type serine protease inhibitor mulgin-3 OS=Pseudechis australis OX=8670 PE=2 SV=1
+sp|D5J9Q8|VKT5_BUNFL	-	8e-11	47.1	Kunitz-type serine protease inhibitor isoform 5 OS=Bungarus flaviceps flaviceps OX=8615 PE=3 SV=1
+sp|P82968|MCPI_MELCP	-	8.8e-11	47.0	Four-domain proteases inhibitor OS=Melithaea caledonica OX=156534 PE=1 SV=1
+sp|A6MGY1|VKT7_DEMVE	-	9e-11	46.9	Kunitz-type serine protease inhibitor vestiginin-7 OS=Demansia vestigiata OX=412038 PE=1 SV=1
+sp|E7FL13|VKT3_PSERS	-	1e-10	46.7	Kunitz serine protease inhibitor Pr-mulgin 3 OS=Pseudechis rossignolii OX=1489342 PE=2 SV=1
+sp|E7FL12|VKT2_PSERS	-	1.1e-10	46.7	Kunitz serine protease inhibitor Pr-mulgin 2 OS=Pseudechis rossignolii OX=1489342 PE=2 SV=1
+sp|Q6ITB0|VKT1_TROCA	-	1.1e-10	46.7	Kunitz-type serine protease inhibitor carinatin-1 OS=Tropidechis carinatus OX=100989 PE=2 SV=1
+sp|Q6ITB1|VKT_PSEPO	-	1.1e-10	46.7	Kunitz-type serine protease inhibitor blackelin OS=Pseudechis porphyriacus OX=8671 PE=2 SV=1
+sp|B5KL34|VKT3_CRYNI	-	1.1e-10	46.7	Kunitz-type serine protease inhibitor nigrescinin-3 OS=Cryptophis nigrescens OX=292442 PE=2 SV=1
+sp|B5L5Q8|VKT5_PSEAU	-	1.1e-10	46.6	Kunitz-type serine protease inhibitor mulgin-5 OS=Pseudechis australis OX=8670 PE=3 SV=1
+sp|Q6ITB4|VKT2_OXYMI	-	1.2e-10	46.5	Kunitz-type serine protease inhibitor microlepidin-2 OS=Oxyuranus microlepidotus OX=111177 PE=2 SV=1
+sp|Q6ITB6|VKT2_OXYSC	-	1.2e-10	46.5	Kunitz-type serine protease inhibitor scutellin-2 OS=Oxyuranus scutellatus scutellatus OX=8667 PE=2 SV=1
+sp|A6MFL3|VKT3_DEMVE	-	1.2e-10	46.5	Kunitz-type serine protease inhibitor vestiginin-3 OS=Demansia vestigiata OX=412038 PE=1 SV=1
+sp|A8Y7P2|VKTB2_DABSI	-	1.3e-10	46.4	Kunitz-type serine protease inhibitor B2 OS=Daboia siamensis OX=343250 PE=2 SV=1
+sp|H6VC06|VKTK2_DABRR	-	1.3e-10	46.4	Kunitz-type serine protease inhibitor DrKIn-II OS=Daboia russelii OX=8707 PE=1 SV=1
+sp|P81548|VKT2_ANTAF	-	1.3e-10	46.4	PI-actitoxin-Axm2b OS=Anthopleura aff. xanthogrammica OX=152178 PE=1 SV=1
+sp|A8Y7P0|VKTB7_DABSI	-	1.5e-10	46.3	Kunitz-type serine protease inhibitor 7 OS=Daboia siamensis OX=343250 PE=2 SV=1
+sp|Q2ES50|VKT1_DABRR	-	1.5e-10	46.3	Kunitz-type serine protease inhibitor 1 OS=Daboia russelii OX=8707 PE=2 SV=1
+sp|Q6ITC0|VKT2_PSEAU	-	1.5e-10	46.3	Kunitz-type serine protease inhibitor mulgin-2 OS=Pseudechis australis OX=8670 PE=2 SV=1
+sp|P82966|VKTCI_OPHHA	-	1.5e-10	46.2	Kunitz-type serine protease inhibitor OS=Ophiophagus hannah OX=8665 PE=1 SV=2
+sp|Q6ITB5|VKT1_OXYMI	-	1.5e-10	46.2	Kunitz-type serine protease inhibitor microlepidin-1 OS=Oxyuranus microlepidotus OX=111177 PE=2 SV=1
+sp|C8YJ97|KUN5_TABYA	-	1.5e-10	46.2	Tabkunin 5 OS=Tabanus yao OX=485572 PE=3 SV=1
+sp|Q6ITB8|VKT4_PSEAU	-	2.1e-10	45.7	Kunitz-type serine protease inhibitor mulgin-4 OS=Pseudechis australis OX=8670 PE=2 SV=1
+sp|P0DL86|VKT2H_RADCR	-	2.1e-10	45.7	PI-stichotoxin-Hcr2h OS=Radianthus crispa OX=3122430 PE=1 SV=1
+sp|E7FL11|VKT1_PSERS	-	2.3e-10	45.6	Kunitz serine protease inhibitor Pr-mulgin 1 OS=Pseudechis rossignolii OX=1489342 PE=1 SV=1
+sp|A8Y7P4|VKTB4_DABSI	-	2.4e-10	45.6	Kunitz-type serine protease inhibitor B4 OS=Daboia siamensis OX=343250 PE=3 SV=1
+sp|C0HJF4|VKT2C_RADCR	-	2.4e-10	45.5	TauPI-stichotoxin-Hcr2c OS=Radianthus crispa OX=3122430 PE=1 SV=1
+sp|F8J2F4|VKT16_DRYCN	-	2.6e-10	45.5	Kunitz-type serine protease inhibitor 161 OS=Drysdalia coronoides OX=66186 PE=1 SV=1
+sp|P0DN12|VKT8_ANEVI	-	2.7e-10	45.4	U-actitoxin-Avd3k OS=Anemonia viridis OX=51769 PE=3 SV=1
+sp|P10832|ISC2_BOMMO	-	3e-10	45.3	Chymotrypsin inhibitor SCI-II OS=Bombyx mori OX=7091 PE=1 SV=1
+sp|Q6ITC1|VKTH1_PSEAU	-	3.2e-10	45.2	Kunitz-type serine protease inhibitor homolog mulgin-1 OS=Pseudechis australis OX=8670 PE=2 SV=1
+sp|A8Y7N5|VKTC2_DABSI	-	3.3e-10	45.1	Kunitz-type serine protease inhibitor C2 OS=Daboia siamensis OX=343250 PE=3 SV=1
+sp|B5L5R1|IVBI5_PSEPO	-	3.3e-10	45.1	Blackelin-5 OS=Pseudechis porphyriacus OX=8671 PE=3 SV=1
+sp|B5KL32|VKT3_NOTSC	-	3.4e-10	45.1	Kunitz-type serine protease inhibitor tigerin-3 OS=Notechis scutatus scutatus OX=70142 PE=2 SV=1
+sp|B5KL38|VKT1_AUSSU	-	3.5e-10	45.0	Kunitz-type serine protease inhibitor superbin-1 OS=Austrelaps superbus OX=29156 PE=2 SV=1
+sp|B2G331|VKT2B_RADCR	-	3.8e-10	44.9	TauPI-stichotoxin-Hcr2b OS=Radianthus crispa OX=3122430 PE=1 SV=1
+sp|P0DJ82|VKT27_CYRSC	-	4.2e-10	44.8	Kunitz-type kappaPI-theraphotoxin-Hs1c OS=Cyriopagopus schmidti OX=29017 PE=3 SV=1
+sp|B5KF94|VKT1_HOPST	-	4.4e-10	44.7	Kunitz-type serine protease inhibitor stephenin-1 OS=Hoplocephalus stephensii OX=196418 PE=2 SV=1
+sp|Q5ZPJ7|VKT_NAJAT	-	4.6e-10	44.7	Kunitz-type serine protease inhibitor NACI OS=Naja atra OX=8656 PE=1 SV=1
+sp|B2KTG1|VKT_BUNFA	-	5.1e-10	44.5	Kunitz-type serine protease inhibitor bungaruskunin OS=Bungarus fasciatus OX=8613 PE=1 SV=1
+sp|D8KY58|VKT_BOMTE	-	5.1e-10	44.5	Kunitz-type serine protease inhibitor Bt-KTI OS=Bombus terrestris OX=30195 PE=3 SV=1
+sp|C0HJF3|VKT2D_RADCR	-	5.2e-10	44.5	TauPI-stichotoxin-Hcr2d OS=Radianthus crispa OX=3122430 PE=1 SV=1
+sp|Q6ITB7|VKT1_OXYSC	-	5.4e-10	44.5	Kunitz-type serine protease inhibitor scutellin-1 OS=Oxyuranus scutellatus scutellatus OX=8667 PE=2 SV=1
+sp|B5KL31|VKT3_PSEPO	-	5.8e-10	44.4	Kunitz-type serine protease inhibitor blackelin-3 OS=Pseudechis porphyriacus OX=8671 PE=2 SV=1
+sp|P0DV03|VKT2M_RADCR	-	5.8e-10	44.3	PI-stichotoxin-Hcr2m OS=Radianthus crispa OX=3122430 PE=3 SV=1
+sp|Q9TWF9|VKT2_ANESU	-	5.9e-10	44.3	KappaPI-actitoxin-Avd3c OS=Anemonia sulcata OX=6108 PE=1 SV=1
+sp|Q6ITB3|VKT1_NOTSC	-	6.5e-10	44.2	Kunitz-type serine protease inhibitor tigerin-1 OS=Notechis scutatus scutatus OX=70142 PE=2 SV=1
+sp|B5KL30|VKT4_OXYSC	-	6.6e-10	44.2	Kunitz-type serine protease inhibitor scutellin-4 OS=Oxyuranus scutellatus scutellatus OX=8667 PE=2 SV=1
+sp|B5KL41|VKT4_AUSSU	-	6.6e-10	44.2	Kunitz-type serine protease inhibitor superbin-4 OS=Austrelaps superbus OX=29156 PE=2 SV=1
+sp|Q2ES48|VKT3_DABRR	-	6.8e-10	44.1	Kunitz-type serine protease inhibitor 3 OS=Daboia russelii OX=8707 PE=2 SV=1
+sp|A8Y7P5|VKTB5_DABSI	-	7.7e-10	43.9	Kunitz-type serine protease inhibitor B5 OS=Daboia siamensis OX=343250 PE=2 SV=1
+sp|P26228|SBPI_SARBU	-	7.8e-10	43.9	Protease inhibitor OS=Sarcophaga bullata OX=7385 PE=1 SV=1
+sp|P0DJ46|VKT21_LYCMC	-	7.9e-10	43.9	Kunitz-type serine protease inhibitor LmKTT-1a OS=Lychas mucronatus OX=172552 PE=1 SV=1
+sp|D2Y2Q7|VKTP1_CYRHA	-	8.2e-10	43.9	Kunitz-type U15-theraphotoxin-Hhn1p OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|Q03610|YN81_CAEEL	-	8.2e-10	43.9	Uncharacterized protein ZC84.1 OS=Caenorhabditis elegans OX=6239 GN=ZC84.1 PE=3 SV=6
+sp|B5KL33|VKT2_TROCA	-	8.3e-10	43.8	Kunitz-type serine protease inhibitor carinatin-2 OS=Tropidechis carinatus OX=100989 PE=2 SV=1
+sp|A6MFL2|VKT2_DEMVE	-	8.5e-10	43.8	Kunitz-type serine protease inhibitor vestiginin-2 OS=Demansia vestigiata OX=412038 PE=2 SV=1
+sp|D2Y2G1|VKTJ1_CYRHA	-	9e-10	43.7	Kunitz-type U15-theraphotoxin-Hhn1j OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|P0DJ84|VKT40_CYRSC	-	9e-10	43.7	Kunitz-type kappaPI-theraphotoxin-Hs1d OS=Cyriopagopus schmidti OX=29017 PE=3 SV=1
+sp|A8Y7P1|VKTB1_DABSI	-	1e-09	43.5	Kunitz-type serine protease inhibitor B1 OS=Daboia siamensis OX=343250 PE=1 SV=1
+sp|Q8T0W4|VKT2_PIMHY	-	1.1e-09	43.5	Kunitz-type serine protease inhibitor cvp2 OS=Pimpla hypochondriaca OX=135724 PE=1 SV=1
+sp|D2Y2Q5|VKTN1_CYRHA	-	1.4e-09	43.1	Kunitz-type U15-theraphotoxin-Hhn1n OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|P0DJ48|VKT23_LYCMC	-	1.5e-09	43.0	Kunitz-type serine protease inhibitor LmKTT-1c OS=Lychas mucronatus OX=172552 PE=3 SV=1
+sp|D2Y2Q8|VKTQ1_CYRHA	-	1.7e-09	42.9	Kunitz-type U15-theraphotoxin-Hhn1q OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|H2A0P0|KCP5_PINMG	-	1.7e-09	42.8	BPTI/Kunitz domain-containing protein 5 OS=Margaritifera margaritifera OX=102329 PE=1 SV=1
+sp|P0DV06|VKT2P_RADCR	-	1.7e-09	42.8	PI-stichotoxin-Hcr2p OS=Radianthus crispa OX=3122430 PE=3 SV=1
+sp|P10831|ISC1_BOMMO	-	1.7e-09	42.8	Chymotrypsin inhibitor SCI-I OS=Bombyx mori OX=7091 PE=1 SV=1
+sp|D2Y2Q9|VKTR1_CYRHA	-	2e-09	42.6	Kunitz-type U15-theraphotoxin-Hhn1r OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|P00983|MAMB7_DENPO	-	2e-09	42.6	Mambaquaretin-7 OS=Dendroaspis polylepis polylepis OX=8620 PE=1 SV=1
+sp|H2A0N5|KCP3_PINMG	-	2.3e-09	42.4	BPTI/Kunitz domain-containing protein 3 OS=Margaritifera margaritifera OX=102329 PE=1 SV=1
+sp|P0DJ49|VKT24_OLIMR	-	2.4e-09	42.4	Kunitz-type serine protease inhibitor BmKTT-1 OS=Olivierus martensii OX=34649 PE=3 SV=1
+sp|D2Y2Q2|VKTM1_CYRHA	-	2.4e-09	42.3	Kunitz-type U15-theraphotoxin-Hhn1m OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|A6MFL1|VKT1_DEMVE	-	2.5e-09	42.3	Kunitz-type serine protease inhibitor vestiginin-1 OS=Demansia vestigiata OX=412038 PE=2 SV=1
+sp|P0DJ45|VKT22_LYCMC	-	2.6e-09	42.2	Kunitz-type serine protease inhibitor LmKTT-1b OS=Lychas mucronatus OX=172552 PE=2 SV=1
+sp|H2A0N1|KCP2_PINMG	-	2.9e-09	42.1	BPTI/Kunitz domain-containing protein 2 OS=Margaritifera margaritifera OX=102329 PE=1 SV=1
+sp|P0DN15|VKTB_ANEVI	-	3.1e-09	42.0	U-actitoxin-Avd3n OS=Anemonia viridis OX=51769 PE=1 SV=1
+sp|P81162|CRPTI_RHIMP	-	4.3e-09	41.6	Protease inhibitor carrapatin OS=Rhipicephalus microplus OX=6941 PE=1 SV=1
+sp|H2A0M2|KCP1_PINMG	-	4.4e-09	41.5	BPTI/Kunitz domain-containing protein 1 OS=Margaritifera margaritifera OX=102329 PE=1 SV=1
+sp|P15989|CO6A3_CHICK	-	4.7e-09	41.4	Collagen alpha-3(VI) chain OS=Gallus gallus OX=9031 GN=COL6A3 PE=2 SV=2
+sp|B5L5R6|IVBI3_HOPST	-	4.7e-09	41.4	Stephenin-3 OS=Hoplocephalus stephensii OX=196418 PE=3 SV=2
+sp|A6MGX9|VKT5_DEMVE	-	5.1e-09	41.3	Kunitz-type serine protease inhibitor vestiginin-5 OS=Demansia vestigiata OX=412038 PE=2 SV=1
+sp|P00772|CELA1_PIG	-	5.4e-09	41.2	Chymotrypsin-like elastase family member 1 OS=Sus scrofa OX=9823 GN=CELA1 PE=1 SV=1
+sp|P0DN16|VKTC_ANEVI	-	5.6e-09	41.2	U-actitoxin-Avd3o OS=Anemonia viridis OX=51769 PE=3 SV=1
+sp|Q589G4|VKT19_ANOSM	-	6.1e-09	41.1	Kunitz-type serine protease inhibitor As-fr-19 OS=Anoplius samariensis OX=200614 PE=1 SV=1
+sp|P86959|KCP1_PINMA	-	7.2e-09	40.8	BPTI/Kunitz domain-containing protein 1 OS=Pinctada maxima OX=104660 PE=1 SV=1
+sp|D2Y2Q1|VKTL1_CYRHA	-	7.4e-09	40.8	Kunitz-type U15-theraphotoxin-Hhn1l OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|D2Y488|VKT1A_CONCL	-	8.8e-09	40.6	Kunitz-type serine protease inhibitor conotoxin Cal9.1a OS=Californiconus californicus OX=1736779 PE=3 SV=1
+sp|G3LH89|VKT_BOMIG	-	9.2e-09	40.5	Kunitz-type serine protease inhibitor Bi-KTI OS=Bombus ignitus OX=130704 PE=3 SV=1
+sp|P86964|KCP3_PINMA	-	1.7e-08	39.6	BPTI/Kunitz domain-containing protein 3 OS=Pinctada maxima OX=104660 PE=1 SV=1
+sp|C8YJ96|KUN4_TABYA	-	1.8e-08	39.5	Tabkunin 4 OS=Tabanus yao OX=485572 PE=3 SV=1
+sp|P81658|VKTHC_DENAN	-	2.1e-08	39.3	Kunitz-type serine protease inhibitor homolog calcicludine OS=Dendroaspis angusticeps OX=8618 PE=1 SV=1
+sp|P07481|ISC3_BOMMO	-	2.2e-08	39.3	Chymotrypsin inhibitor SCI-III OS=Bombyx mori OX=7091 PE=1 SV=1
+sp|F8J2F6|VKT18_DRYCN	-	2.2e-08	39.3	Kunitz-type serine protease inhibitor 18 OS=Drysdalia coronoides OX=66186 PE=1 SV=1
+sp|Q1RPS8|VKTH6_BUNMU	-	2.4e-08	39.1	Kunitz-type serine protease inhibitor homolog beta-bungarotoxin B6 chain OS=Bungarus multicinctus OX=8616 PE=3 SV=1
+sp|Q2UY09|COSA1_HUMAN	-	3.4e-08	38.7	Collagen alpha-1(XXVIII) chain OS=Homo sapiens OX=9606 GN=COL28A1 PE=1 SV=2
+sp|P0DMJ1|VKT39_CYRSC	-	3.5e-08	38.6	Kunitz-type U15-theraphotoxin-Hs1g OS=Cyriopagopus schmidti OX=29017 PE=3 SV=1
+sp|F6ULY1|WFC6B_MOUSE	-	3.9e-08	38.5	WAP four-disulfide core domain protein 6B OS=Mus musculus OX=10090 GN=Wfdc6b PE=2 SV=1
+sp|Q96NZ8|WFKN1_HUMAN	-	4.2e-08	38.4	WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 1 OS=Homo sapiens OX=9606 GN=WFIKKN1 PE=1 SV=1
+sp|O95925|EPPI_HUMAN	-	4.4e-08	38.3	Eppin OS=Homo sapiens OX=9606 GN=EPPIN PE=1 SV=1
+sp|F5GTK6|VKGUA_SIMGU	-	4.6e-08	38.2	Guianensin OS=Simulium guianense OX=445764 PE=1 SV=1
+sp|Q4KUS1|WFDC8_MOUSE	-	4.9e-08	38.2	WAP four-disulfide core domain protein 8 OS=Mus musculus OX=10090 GN=Wfdc8 PE=2 SV=1
+sp|P12111|CO6A3_HUMAN	-	8.6e-08	37.4	Collagen alpha-3(VI) chain OS=Homo sapiens OX=9606 GN=COL6A3 PE=1 SV=5
+sp|Q7T2Q6|VKTHB_BUNFL	-	9.1e-08	37.3	Kunitz-type serine protease inhibitor homolog beta-bungarotoxin B chain OS=Bungarus flaviceps flaviceps OX=8615 PE=1 SV=1
+sp|Q90W96|VKT6_PSETT	-	9.6e-08	37.2	Kunitz-type serine protease inhibitor textilinin-6 OS=Pseudonaja textilis textilis OX=169397 PE=2 SV=1
+sp|Q6ITB2|VKT2_NOTSC	-	1.2e-07	37.0	Kunitz-type serine protease inhibitor tigerin-2 OS=Notechis scutatus scutatus OX=70142 PE=2 SV=1
+sp|Q28153|CELA1_BOVIN	-	1.9e-07	36.3	Chymotrypsin-like elastase family member 1 OS=Bos taurus OX=9913 GN=CELA1 PE=2 SV=1
+sp|B5L5Q1|VKT7_PSETT	-	2e-07	36.2	Kunitz-type serine protease inhibitor textilinin-7 OS=Pseudonaja textilis textilis OX=169397 PE=3 SV=1
+sp|P19859|VKTCI_NAJNA	-	2.1e-07	36.2	Kunitz-type serine protease inhibitor OS=Naja naja OX=35670 PE=1 SV=1
+sp|Q1RPS9|VKTH5_BUNMU	-	2.3e-07	36.0	Kunitz-type serine protease inhibitor homolog beta-bungarotoxin B5 chain OS=Bungarus multicinctus OX=8616 PE=3 SV=1
+sp|C0HLB0|MAMB9_DENVI	-	2.4e-07	36.0	Mambaquaretin-9 OS=Dendroaspis viridis OX=8621 PE=1 SV=1
+sp|B5KL29|VKT3_OXYSC	-	2.4e-07	36.0	Kunitz-type serine protease inhibitor scutellin-3 OS=Oxyuranus scutellatus scutellatus OX=8667 PE=2 SV=1
+sp|B5KL27|VKT3_OXYMI	-	2.7e-07	35.8	Kunitz-type serine protease inhibitor microlepidin-3 OS=Oxyuranus microlepidotus OX=111177 PE=2 SV=1
+sp|P00773|CELA1_RAT	-	3.1e-07	35.6	Chymotrypsin-like elastase family member 1 OS=Rattus norvegicus OX=10116 GN=Cela1 PE=1 SV=1
+sp|P16344|VKT2A_RADCR	-	3.8e-07	35.3	PI-stichotoxin-Hcr2a OS=Radianthus crispa OX=3122430 PE=1 SV=1
+sp|P0DQR0|VKT2_PALCA	-	4e-07	35.2	Kunitz-like toxin PcKuz2 OS=Palythoa caribaeorum OX=134933 PE=3 SV=1
+sp|D2Y2Q6|VKTO1_CYRHA	-	4.4e-07	35.1	Kunitz-type U15-theraphotoxin-Hhn1o OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|I6VXS1|KUN2_RHIHE	-	5e-07	34.9	Anticoagulant protein rhipilin-2 OS=Rhipicephalus haemaphysaloides OX=237073 PE=2 SV=1
+sp|O46644|CELA1_MACFA	-	5.8e-07	34.7	Chymotrypsin-like elastase family member 1 OS=Macaca fascicularis OX=9541 GN=CELA1 PE=2 SV=1
+sp|Q91X79|CELA1_MOUSE	-	7e-07	34.4	Chymotrypsin-like elastase family member 1 OS=Mus musculus OX=10090 GN=Cela1 PE=1 SV=1
+sp|Q5R1M5|CELA1_FELCA	-	7.3e-07	34.4	Chymotrypsin-like elastase family member 1 OS=Felis catus OX=9685 GN=CELA1 PE=2 SV=1
+sp|Q867B0|CELA1_CANLF	-	7.4e-07	34.4	Chymotrypsin-like elastase family member 1 OS=Canis lupus familiaris OX=9615 GN=CELA1 PE=2 SV=1
+sp|O95428|PPN_HUMAN	-	7.9e-07	34.3	Papilin OS=Homo sapiens OX=9606 GN=PAPLN PE=1 SV=4
+sp|Q3UW55|WFC6A_MOUSE	-	9e-07	34.1	WAP four-disulfide core domain protein 6A OS=Mus musculus OX=10090 GN=Wfdc6a PE=2 SV=1
+sp|Q0PL65|VKTH7_BUNMU	-	9.1e-07	34.1	Kunitz-type serine protease inhibitor homolog beta-bungarotoxin B5-B chain OS=Bungarus multicinctus OX=8616 PE=2 SV=1
+sp|D4A2Z2|EPPI_RAT	-	9.7e-07	34.0	Eppin OS=Rattus norvegicus OX=10116 GN=Eppin PE=3 SV=1
+sp|Q2UY11|COSA1_MOUSE	-	1.2e-06	33.7	Collagen alpha-1(XXVIII) chain OS=Mus musculus OX=10090 GN=Col28a1 PE=2 SV=1
+sp|Q9UNI1|CELA1_HUMAN	-	1.6e-06	33.3	Chymotrypsin-like elastase family member 1 OS=Homo sapiens OX=9606 GN=CELA1 PE=1 SV=2
+sp|H2A0N9|KCP4_PINMG	-	1.9e-06	33.1	BPTI/Kunitz domain-containing protein 4 OS=Margaritifera margaritifera OX=102329 PE=1 SV=1
+sp|B5M0W4|SV66_SIMVI	-	2.1e-06	32.9	Simukunin OS=Simulium vittatum OX=7192 PE=1 SV=1
+sp|G9I929|VKTA_MICTN	-	2.2e-06	32.8	Kunitz-type neurotoxin MitTx-alpha OS=Micrurus tener tener OX=1114302 PE=1 SV=1
+sp|Q9D263|SPIT4_MOUSE	-	2.3e-06	32.8	Kunitz-type protease inhibitor 4 OS=Mus musculus OX=10090 GN=Spint4 PE=2 SV=1
+sp|Q90W97|VKT5_PSETT	-	2.9e-06	32.5	Kunitz-type serine protease inhibitor textilinin-5 OS=Pseudonaja textilis textilis OX=169397 PE=2 SV=1
+sp|B5KL28|VKT4_OXYMI	-	3e-06	32.4	Kunitz-type serine protease inhibitor microlepidin-4 OS=Oxyuranus microlepidotus OX=111177 PE=2 SV=1
+sp|Q8AY46|VKTHB_BUNCA	-	3.5e-06	32.2	Kunitz-type serine protease inhibitor homolog beta-bungarotoxin B1 chain OS=Bungarus candidus OX=92438 PE=2 SV=2
+sp|B2KTG2|VKTH1_BUNFA	-	6.2e-06	31.4	Kunitz-type serine protease inhibitor homolog beta-bungarotoxin BF B1 chain OS=Bungarus fasciatus OX=8613 PE=2 SV=1
+sp|Q8R0S6|WFKN1_MOUSE	-	6.8e-06	31.3	WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 1 OS=Mus musculus OX=10090 GN=Wfikkn1 PE=2 SV=2
+sp|P11424|IMAP_DROFU	-	6.9e-06	31.3	Male accessory gland serine protease inhibitor OS=Drosophila funebris OX=7221 GN=PapD PE=1 SV=1
+sp|P0CY85|VKTB1_CONBU	-	7.2e-06	31.2	Kunitz-type conkunitzin-B1 OS=Conus bullatus OX=89438 PE=3 SV=1
+sp|D2Y2F5|VKT4_CYRHA	-	7.7e-06	31.1	Kunitz-type U15-theraphotoxin-Hhn1d OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|P0DJ71|VKT35_CYRHA	-	7.7e-06	31.1	Kunitz-type U15-theraphotoxin-Hhn1d OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|P55210|CASP7_HUMAN	-	7.8e-06	31.1	Caspase-7 OS=Homo sapiens OX=9606 GN=CASP7 PE=1 SV=1
+sp|P0DJ85|VKT45_CYRSC	-	8.5e-06	31.0	Kunitz-type U15-theraphotoxin-Hs1f OS=Cyriopagopus schmidti OX=29017 PE=3 SV=1
+sp|Q9EPX2|PPN_MOUSE	-	9.2e-06	30.9	Papilin OS=Mus musculus OX=10090 GN=Papln PE=2 SV=2
+sp|P00987|VKTH1_BUNMU	-	1e-05	30.7	Kunitz-type serine protease inhibitor homolog beta-bungarotoxin B1 chain, major component OS=Bungarus multicinctus OX=8616 PE=1 SV=2
+sp|Q9W728|VKTH3_BUNMU	-	1.1e-05	30.6	Kunitz-type serine protease inhibitor homolog beta-bungarotoxin B3 chain OS=Bungarus multicinctus OX=8616 PE=2 SV=1
+sp|B2KTG3|VKTH2_BUNFA	-	1.4e-05	30.2	Kunitz-type serine protease inhibitor homolog beta-bungarotoxin BF B2 chain OS=Bungarus fasciatus OX=8613 PE=2 SV=1
+sp|P0DJ80|VKT22_CYRSC	-	1.6e-05	30.1	Kunitz-type U15-theraphotoxin-Hs1a OS=Cyriopagopus schmidti OX=29017 PE=3 SV=1
+sp|B2ZBB8|VKT33_CYRSC	-	1.6e-05	30.1	Kunitz-type U15-theraphotoxin-Hs1a OS=Cyriopagopus schmidti OX=29017 PE=3 SV=1
+sp|P0DJ75|VKT2_CYRSC	-	1.6e-05	30.1	Kunitz-type U15-theraphotoxin-Hs1a OS=Cyriopagopus schmidti OX=29017 PE=3 SV=1
+sp|P0DJ78|VKT6_CYRSC	-	1.6e-05	30.1	Kunitz-type U15-theraphotoxin-Hs1a OS=Cyriopagopus schmidti OX=29017 PE=3 SV=1
+sp|B2ZBC0|VKTG9_CYRSC	-	1.7e-05	30.0	Kunitz-type U15-theraphotoxin-Hs1c OS=Cyriopagopus schmidti OX=29017 PE=3 SV=1
+sp|P0C5J5|WFKN1_RAT	-	2.2e-05	29.7	WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 1 OS=Rattus norvegicus OX=10116 GN=Wfikkn1 PE=2 SV=1
+sp|Q7SIG3|ELA1_SALSA	-	2.2e-05	29.6	Elastase-1 OS=Salmo salar OX=8030 PE=1 SV=1
+sp|B2ZBB9|VKTG6_CYRSC	-	2.4e-05	29.5	Kunitz-type U15-theraphotoxin-Hs1b OS=Cyriopagopus schmidti OX=29017 PE=3 SV=1
+sp|D2Y2F9|VKTH1_CYRHA	-	2.4e-05	29.5	Kunitz-type U15-theraphotoxin-Hhn1h OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|P0DJ65|VKT7_CYRHA	-	2.4e-05	29.5	Kunitz-type U15-theraphotoxin-Hhn1h OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|D2Y2C2|VKTA1_CYRHA	-	2.4e-05	29.5	Kunitz-type U15-theraphotoxin-Hhn1a OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|P0DJ70|VKT53_CYRHA	-	2.4e-05	29.5	Kunitz-type U15-theraphotoxin-Hhn1a OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|Q9BDL1|EPPI_MACMU	-	2.7e-05	29.3	Eppin OS=Macaca mulatta OX=9544 GN=EPPIN PE=2 SV=1
+sp|D2Y2F8|VKTG1_CYRHA	-	3.1e-05	29.1	Kunitz-type U15-theraphotoxin-Hhn1g OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|D2Y2F4|VKTC1_CYRHA	-	3.5e-05	29.0	Kunitz-type U15-theraphotoxin-Hhn1c OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|P0DJ67|VKT34_CYRHA	-	3.5e-05	29.0	Kunitz-type U15-theraphotoxin-Hhn1c OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|D2Y2F6|VKTE1_CYRHA	-	4.9e-05	28.5	Kunitz-type U15-theraphotoxin-Hhn1e OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|P0DJ72|VKT68_CYRHA	-	4.9e-05	28.5	Kunitz-type U15-theraphotoxin-Hhn1e OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|D2Y2F7|VKTF1_CYRHA	-	5.2e-05	28.4	Kunitz-type U15-theraphotoxin-Hhn1f OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|P0DJ73|VKT74_CYRHA	-	5.2e-05	28.4	Kunitz-type U15-theraphotoxin-Hhn1f OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|D2Y2F3|VKT2_CYRHA	-	5.8e-05	28.3	Kunitz-type U15-theraphotoxin-Hhn1b OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|P0DJ64|VKT31_CYRHA	-	5.8e-05	28.3	U15-Kunitz-type theraphotoxin-Hhn1b OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|B5L5Q6|VKT5_OXYMI	-	6.3e-05	28.2	Kunitz-type serine protease inhibitor microlepidin-5 OS=Oxyuranus microlepidotus OX=111177 PE=3 SV=1
+sp|P0DJ79|VKT13_CYRSC	-	6.5e-05	28.1	Kunitz-type U15-theraphotoxin-Hs1d OS=Cyriopagopus schmidti OX=29017 PE=3 SV=1
+sp|M9PE65|AXO_DROME	-	6.8e-05	28.1	Axotactin OS=Drosophila melanogaster OX=7227 GN=axo PE=1 SV=1
+sp|Q75S50|VKTH3_BUNCA	-	6.8e-05	28.1	Kunitz-type serine protease inhibitor homolog beta-bungarotoxin B3 chain OS=Bungarus candidus OX=92438 PE=2 SV=1
+sp|Q8AY44|VKTH7_BUNCA	-	6.8e-05	28.1	Kunitz-type serine protease inhibitor homolog beta-bungarotoxin B2b chain OS=Bungarus candidus OX=92438 PE=2 SV=2
+sp|Q9FX77|Y1664_ARATH	-	6.9e-05	28.0	B3 domain-containing protein At1g16640 OS=Arabidopsis thaliana OX=3702 GN=At1g16640 PE=1 SV=1
+sp|C0LNR2|VKT_VESBI	-	6.9e-05	28.0	Kunitz-type serine protease inhibitor bicolin OS=Vespa bicolor OX=619325 PE=1 SV=1
+sp|Q8AY45|VKBH2_BUNCA	-	7.1e-05	28.0	Kunitz-type serine protease inhibitor homolog beta-bungarotoxin B2a chain OS=Bungarus candidus OX=92438 PE=2 SV=2
+sp|Q9DA01|EPPI_MOUSE	-	9.7e-05	27.6	Eppin OS=Mus musculus OX=10090 GN=Eppin PE=1 SV=1
+sp|P04946|KV5AM_MOUSE	-	0.0001	27.5	Ig kappa chain V-V region NQ5-89.4 OS=Mus musculus OX=10090 PE=2 SV=1
+sp|P00760|TRY1_BOVIN	-	0.00011	27.4	Serine protease 1 OS=Bos taurus OX=9913 GN=PRSS1 PE=1 SV=3
+sp|Q1RPT0|VKTH4_BUNMU	-	0.00013	27.2	Kunitz-type serine protease inhibitor homolog beta-bungarotoxin B4 chain OS=Bungarus multicinctus OX=8616 PE=1 SV=1
+sp|P00989|VKTH2_BUNMU	-	0.00013	27.2	Kunitz-type serine protease inhibitor homolog beta-bungarotoxin B2 chain OS=Bungarus multicinctus OX=8616 PE=1 SV=2
+sp|P0DJ81|VKT24_CYRSC	-	0.00015	27.0	Kunitz-type U15-theraphotoxin-Hs1e OS=Cyriopagopus schmidti OX=29017 PE=3 SV=1
+sp|Q29461|CEL2A_BOVIN	-	0.00017	26.8	Chymotrypsin-like elastase family member 2A OS=Bos taurus OX=9913 GN=CELA2A PE=2 SV=1
+sp|P01646|KV5AD_MOUSE	-	0.00022	26.4	Ig kappa chain V-V region HP 123E6 OS=Mus musculus OX=10090 PE=1 SV=1
+sp|Q02388|CO7A1_HUMAN	-	0.00023	26.4	Collagen alpha-1(VII) chain OS=Homo sapiens OX=9606 GN=COL7A1 PE=1 SV=2
+sp|P05208|CEL2A_MOUSE	-	0.00024	26.3	Chymotrypsin-like elastase family member 2A OS=Mus musculus OX=10090 GN=Cela2a PE=1 SV=1
+sp|P08426|TRY3_RAT	-	0.00027	26.2	Cationic trypsin-3 OS=Rattus norvegicus OX=10116 GN=Try3 PE=2 SV=1
+sp|P01647|KV5AE_MOUSE	-	0.00029	26.1	Ig kappa chain V-V region HP 124E1 OS=Mus musculus OX=10090 PE=1 SV=1
+sp|P00774|CEL2A_RAT	-	0.00032	25.9	Chymotrypsin-like elastase family member 2A OS=Rattus norvegicus OX=10116 GN=Cela2a PE=2 SV=1
+sp|Q63870|CO7A1_MOUSE	-	0.00036	25.8	Collagen alpha-1(VII) chain OS=Mus musculus OX=10090 GN=Col7a1 PE=1 SV=3
+sp|P01644|KV5AB_MOUSE	-	0.00036	25.7	Ig kappa chain V-V region HP R16.7 OS=Mus musculus OX=10090 PE=1 SV=1
+sp|P06871|TRY1_CANLF	-	0.00036	25.7	Serine protease 1 OS=Canis lupus familiaris OX=9615 GN=PRSS1 PE=2 SV=1
+sp|P01645|KV5AC_MOUSE	-	0.00037	25.7	Ig kappa chain V-V region HP 93G7 OS=Mus musculus OX=10090 PE=1 SV=1
+sp|P08217|CEL2A_HUMAN	-	0.00039	25.6	Chymotrypsin-like elastase family member 2A OS=Homo sapiens OX=9606 GN=CELA2A PE=1 SV=1
+sp|P01643|KV5AA_MOUSE	-	0.00049	25.3	Ig kappa chain V-V region MOPC 173 OS=Mus musculus OX=10090 PE=1 SV=1
+sp|D2Y2G2|VKTK1_CYRHA	-	0.00053	25.2	Kunitz-type U15-theraphotoxin-Hhn1k OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|P0DJ68|VKT45_CYRHA	-	0.00053	25.2	Kunitz-type U15-theraphotoxin-Hhn1k OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|Q9CAQ2|Y1754_ARATH	-	0.00055	25.1	Acetyltransferase At1g77540 OS=Arabidopsis thaliana OX=3702 GN=At1g77540 PE=1 SV=2
+sp|O26781|SDO1_METTH	-	0.00056	25.1	Ribosome maturation protein SDO1 homolog OS=Methanothermobacter thermautotrophicus (strain ATCC 29096 / DSM 1053 / JCM 10044 / NBRC 100330 / Delta H) OX=187420 GN=MTH_685 PE=1 SV=1
+sp|Q2ES49|VKT2_DABRR	-	0.00064	24.9	Kunitz-type serine protease inhibitor 2 OS=Daboia russelii OX=8707 PE=2 SV=1
+sp|P06721|METC_ECOLI	-	0.00073	24.7	Cystathionine beta-lyase MetC OS=Escherichia coli (strain K12) OX=83333 GN=metC PE=1 SV=1
+sp|D2Y2G0|VKTI1_CYRHA	-	0.00083	24.6	Kunitz-type U15-theraphotoxin-Hhn1i OS=Cyriopagopus hainanus OX=2781057 PE=3 SV=1
+sp|Q9QUK9|TRY5_MOUSE	-	0.0013	23.9	Trypsin-5 OS=Mus musculus OX=10090 GN=Try5 PE=1 SV=1
+sp|B4ESA2|VKT1L_BUNMU	-	0.0014	23.9	Kunitz-type serine protease inhibitor PILP-1 OS=Bungarus multicinctus OX=8616 PE=3 SV=1
+sp|B5L5Q3|IVBS5_OXYSC	-	0.0014	23.9	Scutellin-5 OS=Oxyuranus scutellatus scutellatus OX=8667 PE=3 SV=1
+sp|P00761|TRYP_PIG	-	0.0016	23.6	Trypsin OS=Sus scrofa OX=9823 PE=1 SV=1
+sp|P0C1X2|VKTS1_CONST	-	0.0019	23.4	Kunitz-type conkunitzin-S1 OS=Conus striatus OX=6493 PE=1 SV=1
+sp|P00763|TRY2_RAT	-	0.002	23.3	Anionic trypsin-2 OS=Rattus norvegicus OX=10116 GN=Prss2 PE=1 SV=2
+sp|Q6UDR6|SPIT4_HUMAN	-	0.0021	23.3	Kunitz-type protease inhibitor 4 OS=Homo sapiens OX=9606 GN=SPINT4 PE=1 SV=1
+sp|Q7Z1K3|ANIS1_ANISI	-	0.0022	23.2	Major allergen Ani s 1 OS=Anisakis simplex OX=6269 PE=1 SV=1
+sp|Q9N2D1|TRYT_PIG	-	0.0023	23.2	Tryptase OS=Sus scrofa OX=9823 GN=MCT7 PE=2 SV=1
+sp|Q9R0T7|TRY4_MOUSE	-	0.0027	22.9	Trypsin-4 OS=Mus musculus OX=10090 GN=Try4 PE=1 SV=1
+sp|P36507|MP2K2_HUMAN	-	0.0043	22.3	Dual specificity mitogen-activated protein kinase kinase 2 OS=Homo sapiens OX=9606 GN=MAP2K2 PE=1 SV=1
+sp|Q1HG70|MP2K2_CANLF	-	0.0044	22.3	Dual specificity mitogen-activated protein kinase kinase 2 OS=Canis lupus familiaris OX=9615 GN=MAP2K2 PE=2 SV=1
+sp|P55214|CASP7_MESAU	-	0.0048	22.1	Caspase-7 OS=Mesocricetus auratus OX=10036 GN=CASP7 PE=1 SV=1
+sp|Q05116|MP2K1_XENLA	-	0.005	22.1	Dual specificity mitogen-activated protein kinase kinase 1 OS=Xenopus laevis OX=8355 GN=map2k1 PE=1 SV=2
+sp|P07146|TRY2_MOUSE	-	0.0062	21.8	Anionic trypsin-2 OS=Mus musculus OX=10090 GN=Prss2 PE=1 SV=1
+sp|P27616|PUR7_YEAST	-	0.0062	21.8	Phosphoribosylaminoimidazole-succinocarboxamide synthase OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=ADE1 PE=1 SV=2
+sp|P50342|TRYT_MERUN	-	0.0067	21.7	Mast cell tryptase OS=Meriones unguiculatus OX=10047 PE=2 SV=1
+sp|P36506|MP2K2_RAT	-	0.007	21.6	Dual specificity mitogen-activated protein kinase kinase 2 OS=Rattus norvegicus OX=10116 GN=Map2k2 PE=1 SV=1
+sp|Q63932|MP2K2_MOUSE	-	0.0071	21.6	Dual specificity mitogen-activated protein kinase kinase 2 OS=Mus musculus OX=10090 GN=Map2k2 PE=1 SV=2
+sp|P70059|TRY2_XENLA	-	0.0075	21.5	Trypsin OS=Xenopus laevis OX=8355 PE=2 SV=1
+sp|P01648|KV5AF_MOUSE	-	0.0076	21.5	Ig kappa chain V-V region HP 91A3 OS=Mus musculus OX=10090 PE=1 SV=1
+sp|Q90891|MP2K2_CHICK	-	0.0081	21.4	Dual specificity mitogen-activated protein kinase kinase 2 OS=Gallus gallus OX=9031 GN=MAP2K2 PE=2 SV=1
+sp|P03612|CAPSD_BPMS2	-	0.0084	21.3	Capsid protein OS=Escherichia phage MS2 OX=12022 PE=1 SV=2
+sp|P07477|TRY1_HUMAN	-	0.0089	21.3	Serine protease 1 OS=Homo sapiens OX=9606 GN=PRSS1 PE=1 SV=1
+sp|Q63980|MP2K1_CRIGR	-	0.009	21.3	Dual specificity mitogen-activated protein kinase kinase 1 OS=Cricetulus griseus OX=10029 GN=MAP2K1 PE=1 SV=1
+sp|P29678|MP2K1_RABIT	-	0.0093	21.2	Dual specificity mitogen-activated protein kinase kinase 1 OS=Oryctolagus cuniculus OX=9986 GN=MAP2K1 PE=1 SV=2
+sp|Q02750|MP2K1_HUMAN	-	0.0093	21.2	Dual specificity mitogen-activated protein kinase kinase 1 OS=Homo sapiens OX=9606 GN=MAP2K1 PE=1 SV=2
+sp|Q01986|MP2K1_RAT	-	0.0093	21.2	Dual specificity mitogen-activated protein kinase kinase 1 OS=Rattus norvegicus OX=10116 GN=Map2k1 PE=1 SV=2
+sp|P31938|MP2K1_MOUSE	-	0.0093	21.2	Dual specificity mitogen-activated protein kinase kinase 1 OS=Mus musculus OX=10090 GN=Map2k1 PE=1 SV=2
+sp|Q9XT09|MP2K1_PANTR	-	0.0094	21.2	Dual specificity mitogen-activated protein kinase kinase 1 OS=Pan troglodytes OX=9598 GN=MAP2K1 PE=2 SV=3
+sp|P69171|CAPSD_BPZR	-	0.01	21.0	Capsid protein OS=Enterobacteria phage ZR OX=332942 PE=1 SV=2
+sp|P69170|CAPSD_BPR17	-	0.011	21.0	Capsid protein OS=Enterobacteria phage R17 OX=12026 PE=1 SV=1
+sp|P86963|KCP2_PINMA	-	0.011	21.0	BPTI/Kunitz domain-containing protein 2 OS=Pinctada maxima OX=104660 PE=1 SV=1
+sp|P03611|CAPSD_BPF2	-	0.011	21.0	Capsid protein OS=Enterobacteria phage f2 OX=12016 PE=1 SV=1
+sp|P00762|TRY1_RAT	-	0.012	20.9	Serine protease 1 OS=Rattus norvegicus OX=10116 GN=Prss1 PE=1 SV=1
+sp|P06872|TRY2_CANLF	-	0.012	20.8	Anionic trypsin OS=Canis lupus familiaris OX=9615 PE=2 SV=1
+sp|Q90629|TRY3_CHICK	-	0.012	20.8	Trypsin II-P29 OS=Gallus gallus OX=9031 PE=2 SV=1
+sp|P08218|CEL2B_HUMAN	-	0.012	20.8	Chymotrypsin-like elastase family member 2B OS=Homo sapiens OX=9606 GN=CELA2B PE=1 SV=2
+sp|Q9BZJ3|TRYD_HUMAN	-	0.016	20.5	Tryptase delta OS=Homo sapiens OX=9606 GN=TPSD1 PE=1 SV=2
+sp|Q8IUA0|WFDC8_HUMAN	-	0.016	20.4	WAP four-disulfide core domain protein 8 OS=Homo sapiens OX=9606 GN=WFDC8 PE=1 SV=2
+sp|D9IFL3|KUN1_RHIHE	-	0.017	20.4	Anticoagulant protein rhipilin-1 OS=Rhipicephalus haemaphysaloides OX=237073 PE=2 SV=1
+sp|P50124|PUR7_CYBJA	-	0.02	20.1	Phosphoribosylaminoimidazole-succinocarboxamide synthase OS=Cyberlindnera jadinii OX=4903 GN=ADE1 PE=3 SV=1
+sp|P35030|TRY3_HUMAN	-	0.021	20.1	Trypsin-3 OS=Homo sapiens OX=9606 GN=PRSS3 PE=1 SV=2
+sp|Q29463|TRY2_BOVIN	-	0.023	20.0	Anionic trypsin OS=Bos taurus OX=9913 PE=2 SV=1
+sp|Q90627|TRY1_CHICK	-	0.026	19.8	Trypsin I-P1 OS=Gallus gallus OX=9031 PE=2 SV=1
+sp|Q90628|TRY2_CHICK	-	0.026	19.7	Trypsin I-P38 OS=Gallus gallus OX=9031 PE=2 SV=1
+sp|P08419|CEL2A_PIG	-	0.027	19.7	Chymotrypsin-like elastase family member 2A OS=Sus scrofa OX=9823 GN=CELA2A PE=1 SV=1
+sp|P18949|METC_SALTY	-	0.033	19.5	Cystathionine beta-lyase OS=Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 GN=metC PE=3 SV=2
+sp|P03614|CAPSD_BPFR	-	0.034	19.4	Capsid protein OS=Enterobacteria phage fr OX=12017 PE=1 SV=4
+sp|Q02844|TRYB1_MOUSE	-	0.04	19.2	Tryptase OS=Mus musculus OX=10090 GN=Tpsab1 PE=2 SV=1
+sp|Q9BQY6|WFDC6_HUMAN	-	0.048	18.9	WAP four-disulfide core domain protein 6 OS=Homo sapiens OX=9606 GN=WFDC6 PE=1 SV=1
+sp|P20231|TRYB2_HUMAN	-	0.05	18.9	Tryptase beta-2 OS=Homo sapiens OX=9606 GN=TPSB2 PE=1 SV=3
+sp|Q15661|TRYB1_HUMAN	-	0.052	18.8	Tryptase alpha/beta-1 OS=Homo sapiens OX=9606 GN=TPSAB1 PE=1 SV=1
+sp|Q11101|YL15_CAEEL	-	0.07	18.4	BPTI/Kunitz inhibitor domain-containing protein C02F12.5 OS=Caenorhabditis elegans OX=6239 GN=C02F12.5 PE=1 SV=3
+sp|P21845|TRYB2_MOUSE	-	0.11	17.8	Tryptase beta-2 OS=Mus musculus OX=10090 GN=Tpsb2 PE=1 SV=2
+sp|P27435|TRYB1_RAT	-	0.14	17.5	Tryptase OS=Rattus norvegicus OX=10116 GN=Tpsab1 PE=1 SV=2
+sp|P26262|KLKB1_MOUSE	-	0.14	17.4	Plasma kallikrein OS=Mus musculus OX=10090 GN=Klkb1 PE=1 SV=2
+sp|P15944|TRYT_CANLF	-	0.15	17.4	Tryptase OS=Canis lupus familiaris OX=9615 PE=3 SV=1
+sp|P00735|THRB_BOVIN	-	0.18	17.1	Prothrombin OS=Bos taurus OX=9913 GN=F2 PE=1 SV=2
+sp|Q8NHM4|TRY6_HUMAN	-	0.22	16.8	Putative trypsin-6 OS=Homo sapiens OX=9606 GN=PRSS3P2 PE=5 SV=2
+sp|Q9QYZ9|PRS30_MOUSE	-	0.25	16.6	Serine protease 30 OS=Mus musculus OX=10090 GN=Prss30 PE=2 SV=2
+sp|Q86WS5|TMPSC_HUMAN	-	0.25	16.6	Transmembrane protease serine 12 OS=Homo sapiens OX=9606 GN=TMPRSS12 PE=1 SV=2
+sp|P35031|TRY1_SALSA	-	0.29	16.4	Trypsin-1 OS=Salmo salar OX=8030 PE=1 SV=1
+sp|P07478|TRY2_HUMAN	-	0.33	16.2	Trypsin-2 OS=Homo sapiens OX=9606 GN=PRSS2 PE=1 SV=1
+sp|P01597|KV139_HUMAN	-	0.39	16.0	Immunoglobulin kappa variable 1-39 OS=Homo sapiens OX=9606 GN=IGKV1-39 PE=1 SV=2
+sp|P04432|KVD39_HUMAN	-	0.39	16.0	Immunoglobulin kappa variable 1D-39 OS=Homo sapiens OX=9606 GN=IGKV1D-39 PE=3 SV=2
+sp|P01602|KV105_HUMAN	-	0.42	15.9	Immunoglobulin kappa variable 1-5 OS=Homo sapiens OX=9606 GN=IGKV1-5 PE=1 SV=2
+sp|Q9C1J4|PUR7_PICPA	-	0.48	15.7	Phosphoribosylaminoimidazole-succinocarboxamide synthase OS=Komagataella pastoris OX=4922 GN=ADE1 PE=3 SV=1
+sp|P52320|PRTC_STRGR	-	0.53	15.6	Streptogrisin-C OS=Streptomyces griseus OX=1911 GN=sprC PE=3 SV=1
+sp|F1NV61|CASP7_CHICK	-	0.55	15.5	Caspase-7 OS=Gallus gallus OX=9031 GN=CASP7 PE=3 SV=2
+sp|P12788|TRY4_RAT	-	0.58	15.4	Trypsin-4 OS=Rattus norvegicus OX=10116 GN=Try4 PE=1 SV=1
+sp|Q3SYP2|CTRC_MOUSE	-	0.61	15.4	Chymotrypsin-C OS=Mus musculus OX=10090 GN=Ctrc PE=1 SV=1
+sp|Q03157|APLP1_MOUSE	-	0.64	15.3	Amyloid beta precursor like protein 1 OS=Mus musculus OX=10090 GN=Aplp1 PE=1 SV=2
+sp|Q06335|APLP2_MOUSE	-	0.72	15.1	Amyloid beta precursor like protein 2 OS=Mus musculus OX=10090 GN=Aplp2 PE=1 SV=4
+sp|P83748|PRS30_RAT	-	0.73	15.1	Serine protease 30 OS=Rattus norvegicus OX=10116 GN=Prss30 PE=1 SV=1
+sp|Q91041|TRYX_GADMO	-	0.73	15.1	Trypsin-10 OS=Gadus morhua OX=8049 PE=2 SV=2
+sp|P04430|KV116_HUMAN	-	0.74	15.1	Immunoglobulin kappa variable 1-16 OS=Homo sapiens OX=9606 GN=IGKV1-16 PE=1 SV=2
+sp|Q8VIF2|PRS42_MOUSE	-	0.74	15.1	Serine protease 42 OS=Mus musculus OX=10090 GN=Prss42 PE=1 SV=1
+sp|P27602|PUR7_CANMA	-	0.75	15.1	Phosphoribosylaminoimidazole-succinocarboxamide synthase OS=Candida maltosa OX=5479 GN=ADE1 PE=3 SV=2
+sp|Q8MVC4|TFPIL_IXOSC	-	0.8	15.0	Penthalaris OS=Ixodes scapularis OX=6945 PE=1 SV=1
+sp|P01601|KVD16_HUMAN	-	0.83	14.9	Immunoglobulin kappa variable 1D-16 OS=Homo sapiens OX=9606 GN=IGKV1D-16 PE=1 SV=2
+sp|A0A0B4J2D9|KVD13_HUMAN	-	0.84	14.9	Immunoglobulin kappa variable 1D-13 OS=Homo sapiens OX=9606 GN=IGKV1D-13 PE=3 SV=1
+sp|P0DP09|KV113_HUMAN	-	0.84	14.9	Immunoglobulin kappa variable 1-13 OS=Homo sapiens OX=9606 GN=IGKV1-13 PE=3 SV=1
+sp|F8S114|VSPCR_CROAD	-	0.84	14.9	Thrombin-like enzyme crotalase OS=Crotalus adamanteus OX=8729 PE=1 SV=1
+sp|J3S3W5|VSP1_CROAD	-	0.84	14.9	Snake venom serine proteinase 1 OS=Crotalus adamanteus OX=8729 PE=1 SV=1
+sp|P51693|APLP1_HUMAN	-	0.89	14.8	Amyloid beta precursor like protein 1 OS=Homo sapiens OX=9606 GN=APLP1 PE=1 SV=3
+sp|P00766|CTRA_BOVIN	-	0.91	14.8	Chymotrypsinogen A OS=Bos taurus OX=9913 PE=1 SV=1
+sp|P35041|TRY7_ANOGA	-	0.96	14.7	Trypsin-7 OS=Anopheles gambiae OX=7165 GN=TRYP7 PE=2 SV=2
+sp|Q96VP6|PUR7_PICAN	-	0.98	14.7	Phosphoribosylaminoimidazole-succinocarboxamide synthase OS=Pichia angusta OX=870730 GN=ADE1 PE=3 SV=1
+sp|P80646|CTRB_GADMO	-	1.0	14.7	Chymotrypsin B OS=Gadus morhua OX=8049 PE=1 SV=1
+sp|W6HZ31|IRSPI_IXORI	-	1.0	14.6	Kunitz-type serine protease inhibitor IrSPI OS=Ixodes ricinus OX=34613 GN=SPI PE=1 SV=2
+sp|P19799|TRY1_XENLA	-	1.2	14.5	Trypsin OS=Xenopus laevis OX=8355 PE=2 SV=1
+sp|P50343|TRYB2_RAT	-	1.2	14.5	Tryptase beta-2 OS=Rattus norvegicus OX=10116 GN=Tpsb2 PE=2 SV=1
+sp|P01641|KV5A8_MOUSE	-	1.2	14.4	Immunoglobulin kappa variable 9-129 OS=Mus musculus OX=10090 GN=Igkv9-129 PE=4 SV=1
+sp|P0C5B4|VSPGL_GLOSH	-	1.3	14.3	Thrombin-like enzyme gloshedobin OS=Gloydius shedaoensis OX=88083 PE=1 SV=2
+sp|Q8UVX1|VSPG_GLOUS	-	1.4	14.3	Snake venom serine protease gussurobin OS=Gloydius ussuriensis OX=35671 PE=2 SV=1
+sp|A0A075B6S4|KVD17_HUMAN	-	1.4	14.3	Immunoglobulin kappa variable 1D-17 OS=Homo sapiens OX=9606 GN=IGKV1D-17 PE=1 SV=1
+sp|Q7M3E1|CTRC_BOVIN	-	1.4	14.3	Chymotrypsin-C OS=Bos taurus OX=9913 GN=CTRC PE=1 SV=2
+sp|Q17004|SP24D_ANOGA	-	1.5	14.2	Serine protease SP24D OS=Anopheles gambiae OX=7165 GN=Sp24D PE=2 SV=3
+sp|P01593|KVD33_HUMAN	-	1.5	14.1	Immunoglobulin kappa variable 1D-33 OS=Homo sapiens OX=9606 GN=IGKV1D-33 PE=1 SV=2
+sp|P01594|KV133_HUMAN	-	1.5	14.1	Immunoglobulin kappa variable 1-33 OS=Homo sapiens OX=9606 GN=IGKV1-33 PE=1 SV=2
+sp|Q8UUJ2|VSPUI_GLOUS	-	1.5	14.1	Snake venom serine protease ussurin OS=Gloydius ussuriensis OX=35671 PE=2 SV=2
+sp|Q7M761|OVCH2_MOUSE	-	1.6	14.1	Ovochymase-2 OS=Mus musculus OX=10090 GN=Ovch2 PE=2 SV=1
+sp|P00757|K1KB4_MOUSE	-	1.6	14.0	Kallikrein 1-related peptidase-like b4 OS=Mus musculus OX=10090 GN=Klk1b4 PE=1 SV=1
+sp|A0A075B6S5|KV127_HUMAN	-	1.7	14.0	Immunoglobulin kappa variable 1-27 OS=Homo sapiens OX=9606 GN=IGKV1-27 PE=1 SV=1
+sp|Q14B25|PRS48_MOUSE	-	1.7	13.9	Serine protease 48 OS=Mus musculus OX=10090 GN=Prss48 PE=2 SV=2
+sp|P18964|VSPA_DABSI	-	2.0	13.7	Factor V activator RVV-V alpha OS=Daboia siamensis OX=343250 PE=1 SV=1
+sp|Q91053|VSP1_GLOUS	-	2.1	13.7	Thrombin-like enzyme calobin-1 OS=Gloydius ussuriensis OX=35671 PE=1 SV=1
+sp|P47796|CTRA_GADMO	-	2.1	13.7	Chymotrypsin A OS=Gadus morhua OX=8049 PE=1 SV=1
+sp|Q9XSM2|TRYT_SHEEP	-	2.1	13.7	Tryptase-2 OS=Ovis aries OX=9940 PE=2 SV=1
+sp|A0A075B6S9|KV137_HUMAN	-	2.1	13.6	Probable non-functional immunoglobulin kappa variable 1-37 OS=Homo sapiens OX=9606 GN=IGKV1-37 PE=1 SV=7
+sp|P0DSN7|KVD37_HUMAN	-	2.1	13.6	Probable non-functional immunoglobulin kappa variable 1D-37 OS=Homo sapiens OX=9606 GN=IGKV1D-37 PE=1 SV=1
+sp|P43060|PUR7_CANAX	-	2.2	13.6	Phosphoribosylaminoimidazole-succinocarboxamide synthase OS=Candida albicans OX=5476 GN=ADE1 PE=3 SV=1
+sp|Q9BYE2|TMPSD_HUMAN	-	2.3	13.5	Transmembrane protease serine 13 OS=Homo sapiens OX=9606 GN=TMPRSS13 PE=1 SV=5
+sp|P00734|THRB_HUMAN	-	2.4	13.4	Prothrombin OS=Homo sapiens OX=9606 GN=F2 PE=1 SV=2
+sp|P97864|CASP7_MOUSE	-	2.5	13.4	Caspase-7 OS=Mus musculus OX=10090 GN=Casp7 PE=1 SV=2
+sp|P08861|CEL3B_HUMAN	-	2.5	13.4	Chymotrypsin-like elastase family member 3B OS=Homo sapiens OX=9606 GN=CELA3B PE=1 SV=3
+sp|Q9I8W9|VSP4_DEIAC	-	2.8	13.2	Snake venom serine protease Dav-X OS=Deinagkistrodon acutus OX=36307 PE=2 SV=1
+sp|P23578|ACRO_MOUSE	-	2.9	13.2	Acrosin OS=Mus musculus OX=10090 GN=Acr PE=1 SV=1
+sp|Q71QH6|VSP13_TRIST	-	3.0	13.1	Snake venom serine protease KN13 OS=Trimeresurus stejnegeri OX=39682 PE=2 SV=1
+sp|Q9BQR3|PRS27_HUMAN	-	3.2	13.1	Serine protease 27 OS=Homo sapiens OX=9606 GN=PRSS27 PE=1 SV=1
+sp|P04716|RBS_SYNP6	-	3.3	13.0	Ribulose bisphosphate carboxylase small subunit OS=Synechococcus sp. (strain ATCC 27144 / PCC 6301 / SAUG 1402/1) OX=269084 GN=cbbS PE=1 SV=3
+sp|Q31NB2|RBS_SYNE7	-	3.3	13.0	Ribulose bisphosphate carboxylase small subunit OS=Synechococcus elongatus (strain ATCC 33912 / PCC 7942 / FACHB-805) OX=1140 GN=cbbS PE=1 SV=1
+sp|Q9YGJ2|VSP1_GLOHA	-	3.4	13.0	Snake venom serine protease pallabin OS=Gloydius halys OX=8714 GN=JZTHR5 PE=2 SV=1
+sp|P29293|ACRO_RAT	-	3.5	12.9	Acrosin OS=Rattus norvegicus OX=10116 GN=Acr PE=2 SV=2
+sp|P36178|CTRB2_PENVA	-	3.5	12.9	Chymotrypsin BII OS=Penaeus vannamei OX=6689 PE=1 SV=1
+sp|P10323|ACRO_HUMAN	-	3.5	12.9	Acrosin OS=Homo sapiens OX=9606 GN=ACR PE=1 SV=4
+sp|Q00871|CTRB1_PENVA	-	3.6	12.9	Chymotrypsin BI OS=Penaeus vannamei OX=6689 PE=1 SV=1
+sp|E0Y420|VSP3_MACLB	-	3.7	12.9	Serine protease VLSP-3 OS=Macrovipera lebetinus OX=3148341 PE=2 SV=1
+sp|I4CHP3|VSPI_GLOHA	-	3.8	12.8	Thrombin-like enzyme AhV_TL-I OS=Gloydius halys OX=8714 PE=1 SV=2
+sp|Q71QI1|VSP12_TRIST	-	3.8	12.8	Snake venom serine protease KN12 OS=Trimeresurus stejnegeri OX=39682 PE=2 SV=1
+sp|P29787|TRY5_AEDAE	-	3.8	12.8	Trypsin 5G1 OS=Aedes aegypti OX=7159 GN=AAEL013712 PE=2 SV=2
+sp|P32822|TRYB_RAT	-	3.8	12.8	Trypsin V-B OS=Rattus norvegicus OX=10116 PE=2 SV=1
+sp|P32821|TRYA_RAT	-	3.8	12.8	Trypsin V-A OS=Rattus norvegicus OX=10116 PE=2 SV=1
+sp|P09093|CEL3A_HUMAN	-	3.9	12.8	Chymotrypsin-like elastase family member 3A OS=Homo sapiens OX=9606 GN=CELA3A PE=1 SV=3
+sp|P15945|K1KB5_MOUSE	-	4.0	12.8	Kallikrein 1-related peptidase b5 OS=Mus musculus OX=10090 GN=Klk1b5 PE=2 SV=1
+sp|Q2PQJ3|VSP1_BOTJR	-	4.0	12.8	Thrombin-like enzyme BjussuSP-1 OS=Bothrops jararacussu OX=8726 PE=1 SV=1
+sp|Q59DY5|LEDL3_DROME	-	4.1	12.7	C-type lectin 37Db OS=Drosophila melanogaster OX=7227 GN=lectin-37Db PE=2 SV=1
+sp|O13061|VSPB_CRAGM	-	4.1	12.7	Snake venom serine protease 2B OS=Craspedocephalus gramineus OX=8767 GN=TLG2B PE=2 SV=1
+sp|Q6T5L0|VSPSH_GLOSH	-	4.3	12.7	Alpha-fibrinogenase shedaoenase OS=Gloydius shedaoensis OX=88083 PE=1 SV=2
+sp|Q8JH85|VSPA_MACLB	-	4.3	12.6	Alpha-fibrinogenase OS=Macrovipera lebetinus OX=3148341 PE=1 SV=1
+sp|Q9YGI6|VSP2_GLOHA	-	4.3	12.6	Snake venom serine protease pallabin-2 OS=Gloydius halys OX=8714 GN=JZTHR7 PE=2 SV=1
+sp|O93421|VSPPE_GLOHA	-	4.3	12.6	Snake venom serine protease pallase OS=Gloydius halys OX=8714 PE=2 SV=2
+sp|A0A0C4DH73|KV112_HUMAN	-	4.4	12.6	Immunoglobulin kappa variable 1-12 OS=Homo sapiens OX=9606 GN=IGKV1-12 PE=3 SV=1
+sp|P01611|KVD12_HUMAN	-	4.4	12.6	Immunoglobulin kappa variable 1D-12 OS=Homo sapiens OX=9606 GN=IGKV1D-12 PE=1 SV=2
+sp|E5RG02|PRS46_HUMAN	-	4.7	12.5	Putative serine protease 46 OS=Homo sapiens OX=9606 GN=PRSS46P PE=3 SV=1
+sp|A0A0C4DH69|KV109_HUMAN	-	4.8	12.5	Immunoglobulin kappa variable 1-9 OS=Homo sapiens OX=9606 GN=IGKV1-9 PE=1 SV=1
+sp|P14272|KLKB1_RAT	-	4.9	12.5	Plasma kallikrein OS=Rattus norvegicus OX=10116 GN=Klkb1 PE=1 SV=1
+sp|Q90812|CRFR1_CHICK	-	6.2	12.1	Corticotropin-releasing factor receptor 1 OS=Gallus gallus OX=9031 GN=CRHR1 PE=3 SV=1
+sp|Q90321|MP2K2_CYPCA	-	6.4	12.1	Dual specificity mitogen-activated protein kinase kinase 2 OS=Cyprinus carpio OX=7962 GN=map2k2 PE=2 SV=1
+sp|Q8WPG5|KUNI_ORNKA	-	240.0	7.0	Thrombin inhibitor savignin OS=Ornithodoros kalahariensis OX=1580572 PE=1 SV=1
+sp|P56409|KUNI_ORNMO	-	740.0	5.5	Ornithodorin OS=Ornithodoros moubata OX=6938 PE=1 SV=1
