@@ -111,7 +111,18 @@ A ***consistency test*** confirmed all **26/26** training sequences are recovere
 
 **5. Validation Dataset**
 
-The validation set was extracted from **Swiss-Prot** (reviewed, manually curated entries only, fragments excluded). Sequence accessions are available in [`positives.tsv`](results/positives.tsv) and [`negatives.tsv`](results/negatives.tsv) for full reproducibility.
+The validation set was extracted from **Swiss-Prot** (reviewed, manually curated, no fragments). To prevent data leakage, human proteins present in the training set were excluded from the test set.
+
+| Dataset Component | HMM | BLAST |
+|-------------------|-----|-------|
+| Positive set | 362 non-human Kunitz proteins | 350 non-human Kunitz proteins |
+| Negative set | 362 random non-Kunitz proteins | 350 random non-Kunitz proteins |
+| Human proteins excluded | 6 proteins | 18 proteins |
+
+Sequence accessions available in:
+
+[`positives_ids.tsv`](results/hmm/positives_ids.tsv), [`positives_ids.tsv`](results/hmm/positives_ids.tsv), [`negatives_ids.tsv`](results/hmm/negatives_ids.tsv), [`blast_positives_ids.tsv`](results/blast/blast_positives_ids.tsv), [`blast_negatives_ids.tsv`](results/blast/blast_negatives_ids.tsv).
+
 
 - Positive set — 368 proteins with an annotated PF00014 domain in UniProt, To prevent data leakage, 6 human proteins present in the training set were excluded, leaving 362
 - Negative set — 362 proteins randomly sampled (random seed = 42) from 564,993 non-Kunitz Swiss-Prot sequences,  balanced to match the positive set.
