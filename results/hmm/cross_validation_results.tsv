@@ -1,0 +1,3 @@
+Fold	Threshold	TP	FN	FP	TN	Sensitivity	Specificity	Precision	F1	MCC
+1	0.001	172	3	0	175	0.9829	1.0	1.0	0.9914	0.983
+2	0.001	173	2	0	175	0.9886	1.0	1.0	0.9943	0.9886
