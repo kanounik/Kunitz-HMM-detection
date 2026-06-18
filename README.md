@@ -83,11 +83,11 @@ kunitz-hmm-profile/
 │   ├── cross_validation.py              # HMM: 2-fold cross-validation
 │   ├── roc_curve.py                     # HMM: ROC curve (AUC = 0.9945)
 │   ├── swissprot.py                     # HMM: Scan full Swiss-Prot 
-│   └── blast.py                         # BLAST: prediction + metrics 
+│   └── blast.py                         # BLAST: prediction + metrics
+├── Report/
+│ └── REPORT.pdf                         # Final MSc project report
 │
-├── README.md
-├── requirements.txt
-└── environment.yml
+└── README.md
 ```
 
 ## Workflow
