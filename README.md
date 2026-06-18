@@ -280,8 +280,8 @@ The trained model's position conservation visualized across 102 nodes:
 **External Tools**
 | Tool | Version | Purpose | Install |
 | :--- | :--- | :--- | :--- |
-| **HMMER** | $\ge$ 3.3 | Build & search HMM profiles | `conda install -c bioconda hmmer` |
-| **BLAST+** | $\ge$ 2.12 | BLAST-based prediction | `conda install -c bioconda blast` |
+| **HMMER** | 3.4 | Build & search HMM profiles | `conda install -c bioconda hmmer` |
+| **BLAST+** | 2.16.0 | BLAST-based prediction | `conda install -c bioconda blast` |
 | **PDBe-fold** | web | Structural alignment | [ebi.ac.uk/msd-srv/ssm/](https://www.ebi.ac.uk/msd-srv/ssm/) |
 
 ## Data Sources
