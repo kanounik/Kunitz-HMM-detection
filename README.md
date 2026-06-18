@@ -171,18 +171,12 @@ These results demonstrate the usefulness of structurally informed pHMMs for larg
 
 ## Technologies
 
-Python 3.12
-
-HMMER 3.4
-
-BLAST+
-
-Biopython
-
-NumPy
-
-Matplotlib
-
+Python 3.12\
+HMMER 3.4\
+BLAST+\
+Biopython\
+NumPy\
+Matplotlib\
 PDBe-fold
 
 ## Author
