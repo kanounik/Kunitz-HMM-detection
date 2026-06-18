@@ -84,6 +84,7 @@ kunitz-hmm-profile/
 │   ├── roc_curve.py                     # HMM: ROC curve (AUC = 0.9945)
 │   ├── swissprot.py                     # HMM: Scan full Swiss-Prot 
 │   └── blast.py                         # BLAST: prediction + metrics
+│
 ├── Report/
 │ └── REPORT.pdf                         # Final MSc project report
 │
