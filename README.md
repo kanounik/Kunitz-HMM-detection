@@ -123,4 +123,17 @@ Using :
 - python [`cross_validation.py`](scripts/cross_validation.py) ➔ **Cross Validation**
 - python [`swissprot.py`](scripts/swissprot.py)  ➔ **Swiss-Prot Scan**
 
+## Results
+
+** HMM Performance
+
+| Metric | Value |
+|--------|------|
+| Sensitivity | 0.9862 |
+| Specificity | 1.0000 |
+| Precision | 1.0000 |
+| F1 | 0.9930 |
+| MCC | 0.9863 |
+| False Positives | 0 | 
+| False Negatives | 5 |
 
