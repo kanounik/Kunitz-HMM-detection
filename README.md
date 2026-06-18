@@ -172,19 +172,28 @@ These results demonstrate the usefulness of structurally informed pHMMs for larg
 ## Technologies
 
 Python 3.12
+
 HMMER 3.4
+
 BLAST+
+
 Biopython
+
 NumPy
+
 Matplotlib
+
 PDBe-fold
 
 ## Author
 
-Kimia Kanouni
-MSc Bioinformatics
-University of Bologna
-Prof. Emidio Capriotti
+**Kimia Kanouni**
+
+MSc Bioinformatics, University of Bologna
+
+Contact: [kimia.kanouni@studio.unibo.it]
+
+Prof. Emidio Capriotti — http://biofold.org/
 
 ## License
 MIT License
