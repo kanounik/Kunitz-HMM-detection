@@ -6,8 +6,7 @@
 - [Background](#background)
 - [Repository Structure](#repository-structure)
 - [Methods](#methods)
--  [Results](#results)
-- [Dependencies](#dependencies)
+-  [Results](#results)- [Dependencies](#dependencies)
 - [Data Sources](#data-sources)
 - [Authors](#authors)
 
@@ -122,7 +121,7 @@ The validation set was extracted from **Swiss-Prot** (reviewed, manually curated
 
 Sequence accessions available in:
 
-[`positives_ids.tsv`](results/hmm/positives_ids.tsv), [`positives_ids.tsv`](results/hmm/positives_ids.tsv), [`negatives_ids.tsv`](results/hmm/negatives_ids.tsv), [`blast_positives_ids.tsv`](results/blast/blast_positives_ids.tsv), [`blast_negatives_ids.tsv`](results/blast/blast_negatives_ids.tsv).
+[`positives_ids.tsv`](results/hmm/positives_ids.tsv), [`negatives_ids.tsv`](results/hmm/negatives_ids.tsv), [`blast_positives_ids.tsv`](results/blast/blast_positives_ids.tsv), [`blast_negatives_ids.tsv`](results/blast/blast_negatives_ids.tsv).
 
 
 
