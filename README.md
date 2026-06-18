@@ -125,7 +125,7 @@ Using :
 
 ## Results
 
-** HMM Performance
+**HMM Performance**
 
 | Metric | Value |
 |--------|------|
@@ -135,17 +135,59 @@ Using :
 | F1 | 0.9930 |
 | MCC | 0.9863 |
 
-** Confusion Matrix
+**Confusion Matrix**
 
 | | Predicted + | Predicted - |
 | :--- | :--- | :--- |
 | **Actual +** | TP = 357 | FN = 5 |
 | **Actual -** | FP = 0 | TN = 362 |
 
-** Cross-Validation
+**Cross-Validation**
 
 | Metric | Fold 1 | Fold 2|
 |--------|--------|-------|
 | **MCC** | 0.9892 | 0.9838 |
 | **AUC** | 0.9945 | 0.9945 |
+
+**BLAST Comparison**
+
+| Metric | HMM | BLAST |
+|--------|------|------|
+| Sensitivity | 0.9862 | **0.9971** |
+| Specificity | **1.0000** | 0.9943 |
+| Precision | **1.0000** | 0.9943 |
+| F1 | 0.9930 | **0.9957** |
+| MCC | 0.9863 | **0.9914** |
+
+The HMM achieved perfect specificity with zero false positives, while BLAST achieved slightly higher sensitivity.
+
+## Swiss-Prot Annotation
+
+Scanning the complete Swiss-Prot database identified:
+- 379 Kunitz-domain proteins
+- 362 previously annotated proteins
+- 17 potential unannotated candidates
+These results demonstrate the usefulness of structurally informed pHMMs for large-scale protein annotation.
+
+## Technologies
+
+Python 3.12
+HMMER 3.4
+BLAST+
+Biopython
+NumPy
+Matplotlib
+PDBe-fold
+
+## Author
+
+Kimia Kanouni
+MSc Bioinformatics
+University of Bologna
+Prof. Emidio Capriotti
+
+## License
+MIT License
+
+
 
