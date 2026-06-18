@@ -275,7 +275,7 @@ The trained model's position conservation visualized across 102 nodes:
 
 **Python ≥ 3.8**
 
-(Also biopython, numpy, matplotlib, seaborn, requests)
+(Also biopython, numpy, matplotlib, requests)
 
 **External Tools**
 | Tool | Version | Purpose | Install |
