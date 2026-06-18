@@ -5,9 +5,9 @@
 - [Overview](#overview)
 - [Background](#background)
 - [Repository Structure](#repository-structure)
-- [Methods](#methods)
--  [Results](#results)- [Dependencies](#dependencies)
-- [Data Sources](#data-sources)
+- [Workflow](#Workflow)
+- [Results](#results)
+- [Technologies](#Technologies)
 - [Authors](#authors)
 
 
