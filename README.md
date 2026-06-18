@@ -134,6 +134,18 @@ Using :
 | Precision | 1.0000 |
 | F1 | 0.9930 |
 | MCC | 0.9863 |
-| False Positives | 0 | 
-| False Negatives | 5 |
+
+** Confusion Matrix
+
+| | Predicted + | Predicted - |
+| :--- | :--- | :--- |
+| **Actual +** | TP = 357 | FN = 5 |
+| **Actual -** | FP = 0 | TN = 362 |
+
+** Cross-Validation
+
+| Metric | Fold 1 | Fold 2|
+|--------|--------|-------|
+| **MCC** | 0.9892 | 0.9838 |
+| **AUC** | 0.9945 | 0.9945 |
 
