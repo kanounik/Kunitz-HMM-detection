@@ -273,7 +273,7 @@ The trained model's position conservation visualized across 102 nodes:
 
 ## Dependencies
 
-**Python ≥ 3.8**
+**Python 3.12.2**
 
 (Also biopython, numpy, matplotlib, requests)
 
