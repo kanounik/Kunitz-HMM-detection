@@ -86,7 +86,8 @@ kunitz-hmm-profile/
 │   └── blast.py                         # BLAST: prediction + metrics
 │
 ├── Report/
-│ └── REPORT.pdf                         # Final MSc project report
+│  ├── REPORT.docx
+│  └── REPORT.pdf                        # Final MSc project report
 │
 └── README.md
 ```
