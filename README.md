@@ -192,8 +192,4 @@ Contact: [kimia.kanouni@studio.unibo.it]
 
 Supervisor: Prof. Emidio Capriotti — http://biofold.org/
 
-## License
-MIT License
-
-
 
