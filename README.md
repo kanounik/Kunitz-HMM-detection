@@ -5,9 +5,10 @@
 - [Overview](#overview)
 - [Background](#background)
 - [Repository Structure](#repository-structure)
-- [Workflow](#Workflow)
+- [Workflow](#workflow)
 - [Results](#results)
-- [Technologies](#Technologies)
+- [Swiss-Prot Annotation](#swiss-prot-annotation)
+- [Technologies](#technologies)
 - [Authors](#authors)
 
 
@@ -18,7 +19,7 @@ The model was trained using experimentally resolved protein structures, validate
 ### Key goals:
 - Build a custom pHMM for the Kunitz domain from structural and sequence data
 - Validate the model against manually curated Swiss-Prot annotations using 2-fold cross-validation
-- Scan full Swiss-Prot and analyze the distribution of Kunitz domains across organisms
+- Scan the complete Swiss-Prot database and identify Kunitz-domain proteins
 
 ## Background
 The **Kunitz domain** is a short (~58 residues), disulfide-rich alpha+beta fold found in serine protease inhibitors. The canonical example is **BPTI** (Bovine Pancreatic Trypsin Inhibitor, PDB: [`3TGI.pdb`](data/3TGI.pdb), chain I), which tightly binds trypsin via its Lys15 residue. The fold is stabilized by three conserved disulfide bonds (Cys5–Cys55, Cys14–Cys38, Cys30–Cys51).
@@ -187,7 +188,7 @@ MSc Bioinformatics, University of Bologna
 
 Contact: [kimia.kanouni@studio.unibo.it]
 
-Prof. Emidio Capriotti — http://biofold.org/
+Supervisor: Prof. Emidio Capriotti — http://biofold.org/
 
 ## License
 MIT License
